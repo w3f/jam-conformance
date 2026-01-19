@@ -1,0 +1,76 @@
+{
+    "config": {
+        "seed": "42",
+        "max_steps": 4294967295,
+        "safrole": false,
+        "profile": {
+            "full": null
+        },
+        "fuzzy_profile": {
+            "full": null
+        },
+        "max_work_items": 3,
+        "mutation_ratio": 0.0,
+        "max_mutations": 0
+    },
+    "stats": {
+        "steps": 1,
+        "imported": 1,
+        "import_max_step": 1,
+        "import_min": 14.916868999999998,
+        "import_max": 14.916868999999998,
+        "import_mean": 14.916868999999998,
+        "import_p50": 14.916868999999998,
+        "import_p75": 0.0,
+        "import_p90": 14.916868999999998,
+        "import_p99": 0.0,
+        "import_std_dev": 0.0
+    },
+    "target": {
+        "info": {
+            "fuzz_version": 1,
+            "fuzz_features": 2,
+            "jam_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_version": {
+                "major": 0,
+                "minor": 1,
+                "patch": 0
+            },
+            "app_name": "jamzig-target"
+        },
+        "stats": {
+            "steps": 1,
+            "imported": 1,
+            "import_max_step": 1,
+            "import_min": 17.051389999999998,
+            "import_max": 17.051389999999998,
+            "import_mean": 17.051389999999998,
+            "import_p50": 17.051389999999998,
+            "import_p75": 0.0,
+            "import_p90": 17.051389999999998,
+            "import_p99": 0.0,
+            "import_std_dev": 0.0
+        }
+    },
+    "error": {
+        "state_diff": {
+            "roots": {
+                "exp": "0x04c13c69b0a3312fe81cc507a48a60e77dbee29e980f756977f8cc33680c87c5",
+                "got": "0xae4cdb602bb5f46e61d02347cb0507bee1db8add656a0e38e8d86b1a36fb146c"
+            },
+            "keyvals": [
+                {
+                    "key": "0x23d76b458eb7e9fec13e507a95e86ec03add50794acc76edd9370aca5ecbf2",
+                    "diff": {
+                        "exp": "0x9daabe088c05a6a7",
+                        "got": "0x091d8551a051d9a2"
+                    }
+                }
+            ]
+        }
+    }
+}

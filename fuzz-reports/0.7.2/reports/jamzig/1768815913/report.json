@@ -1,0 +1,76 @@
+{
+    "config": {
+        "seed": "42",
+        "max_steps": 4294967295,
+        "safrole": false,
+        "profile": {
+            "full": null
+        },
+        "fuzzy_profile": {
+            "full": null
+        },
+        "max_work_items": 3,
+        "mutation_ratio": 0.0,
+        "max_mutations": 0
+    },
+    "stats": {
+        "steps": 1,
+        "imported": 1,
+        "import_max_step": 1,
+        "import_min": 15.867481,
+        "import_max": 15.867481,
+        "import_mean": 15.867481,
+        "import_p50": 15.867481,
+        "import_p75": 0.0,
+        "import_p90": 15.867481,
+        "import_p99": 0.0,
+        "import_std_dev": 0.0
+    },
+    "target": {
+        "info": {
+            "fuzz_version": 1,
+            "fuzz_features": 2,
+            "jam_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_version": {
+                "major": 0,
+                "minor": 1,
+                "patch": 0
+            },
+            "app_name": "jamzig-target"
+        },
+        "stats": {
+            "steps": 1,
+            "imported": 1,
+            "import_max_step": 1,
+            "import_min": 23.608374,
+            "import_max": 23.608374,
+            "import_mean": 23.608374,
+            "import_p50": 23.608374,
+            "import_p75": 0.0,
+            "import_p90": 23.608374,
+            "import_p99": 0.0,
+            "import_std_dev": 0.0
+        }
+    },
+    "error": {
+        "state_diff": {
+            "roots": {
+                "exp": "0x96941ef63cbac48eea01441323b93afab24eeaf833811c574df20372cb32dc42",
+                "got": "0xc95b2d6ca639a26f46d1853cc55ef7868a3518970dc0e33a4afd66b27308558e"
+            },
+            "keyvals": [
+                {
+                    "key": "0x0c000000000000000000000000000000000000000000000000000000000000",
+                    "diff": {
+                        "exp": "0x000000000000000000000000000000000000000000",
+                        "got": "0x000000000000000000000000b1806bad0000000000"
+                    }
+                }
+            ]
+        }
+    }
+}
