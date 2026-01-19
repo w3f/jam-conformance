@@ -25,7 +25,7 @@ TARGET_SOCK = os.environ.get("JAM_FUZZ_TARGET_SOCK", DEFAULT_SOCK)
 DEFAULT_DOCKER_IMAGE = "debian:stable-slim"
 
 # Maximum number of cores to use for docker containers
-DOCKER_CPU_SET = os.environ.get("JAM_FUZZ_DOCKER_CPU_SET", "16-32")
+DOCKER_CPU_SET = os.environ.get("JAM_FUZZ_DOCKER_CPU_SET", "0-31")
 
 # Whether to run targets in docker containers (1) or directly on host (0)
 RUN_DOCKER = int(os.environ.get("JAM_FUZZ_RUN_DOCKER", "1"))
