@@ -1,0 +1,76 @@
+{
+    "config": {
+        "seed": "42",
+        "max_steps": 4294967295,
+        "safrole": false,
+        "profile": {
+            "full": null
+        },
+        "fuzzy_profile": {
+            "full": null
+        },
+        "max_work_items": 3,
+        "mutation_ratio": 0.0,
+        "max_mutations": 0
+    },
+    "stats": {
+        "steps": 1,
+        "imported": 1,
+        "import_max_step": 1,
+        "import_min": 23.312393,
+        "import_max": 23.312393,
+        "import_mean": 23.312393,
+        "import_p50": 23.312393,
+        "import_p75": 0.0,
+        "import_p90": 23.312393,
+        "import_p99": 0.0,
+        "import_std_dev": 0.0
+    },
+    "target": {
+        "info": {
+            "fuzz_version": 1,
+            "fuzz_features": 2,
+            "jam_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_version": {
+                "major": 0,
+                "minor": 3,
+                "patch": 23
+            },
+            "app_name": "JavaJAM"
+        },
+        "stats": {
+            "steps": 1,
+            "imported": 1,
+            "import_max_step": 1,
+            "import_min": 307.859913,
+            "import_max": 307.859913,
+            "import_mean": 307.859913,
+            "import_p50": 307.859913,
+            "import_p75": 0.0,
+            "import_p90": 307.859913,
+            "import_p99": 0.0,
+            "import_std_dev": 0.0
+        }
+    },
+    "error": {
+        "state_diff": {
+            "roots": {
+                "exp": "0x108d9cc5df02ae1f7ea577f28a97fe3c091a7272512349746c93b0f9bb42f93c",
+                "got": "0x509a69ae38c154b272ecb92d848cd2d23809072a16aced6b22dcb75adda3f1d9"
+            },
+            "keyvals": [
+                {
+                    "key": "0xffa5001e00a900ea0000000000000000000000000000000000000000000000",
+                    "diff": {
+                        "exp": "0x000000000000000000000000000000000000000000000000000000000000000000ea93080000000000000000000000000000000000000000008e390200000000000000000000000000020000003d040500d204050000000000",
+                        "got": "0x"
+                    }
+                }
+            ]
+        }
+    }
+}

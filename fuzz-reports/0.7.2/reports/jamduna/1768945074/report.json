@@ -1,0 +1,76 @@
+{
+    "config": {
+        "seed": "42",
+        "max_steps": 4294967295,
+        "safrole": false,
+        "profile": {
+            "full": null
+        },
+        "fuzzy_profile": {
+            "full": null
+        },
+        "max_work_items": 3,
+        "mutation_ratio": 0.0,
+        "max_mutations": 0
+    },
+    "stats": {
+        "steps": 1,
+        "imported": 1,
+        "import_max_step": 1,
+        "import_min": 22.014966,
+        "import_max": 22.014966,
+        "import_mean": 22.014966,
+        "import_p50": 22.014966,
+        "import_p75": 0.0,
+        "import_p90": 22.014966,
+        "import_p99": 0.0,
+        "import_std_dev": 0.0
+    },
+    "target": {
+        "info": {
+            "fuzz_version": 1,
+            "fuzz_features": 2,
+            "jam_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_version": {
+                "major": 0,
+                "minor": 3,
+                "patch": 8
+            },
+            "app_name": "duna-target"
+        },
+        "stats": {
+            "steps": 1,
+            "imported": 1,
+            "import_max_step": 1,
+            "import_min": 225.751015,
+            "import_max": 225.751015,
+            "import_mean": 225.751015,
+            "import_p50": 225.751015,
+            "import_p75": 0.0,
+            "import_p90": 225.751015,
+            "import_p99": 0.0,
+            "import_std_dev": 0.0
+        }
+    },
+    "error": {
+        "state_diff": {
+            "roots": {
+                "exp": "0x108d9cc5df02ae1f7ea577f28a97fe3c091a7272512349746c93b0f9bb42f93c",
+                "got": "0xd78f04868c1dd62dcaeedde12a76ae9bad03c862171abd7f4d98fc4147022f1e"
+            },
+            "keyvals": [
+                {
+                    "key": "0xff000000000000000000000000000000000000000000000000000000000000",
+                    "diff": {
+                        "exp": "0x00605908a552dd4bc6caf29b06082d189ea75d9839550a66dc43c364179b56369adba67effffffffff0a000000000000000a00000000000000e8e4070000000000ffffffffffffffff0708000000000000ff04050000000000",
+                        "got": "0x00605908a552dd4bc6caf29b06082d189ea75d9839550a66dc43c364179b56369af93580ffffffffff0a000000000000000a00000000000000e8e4070000000000ffffffffffffffff0708000000000000ff04050000000000"
+                    }
+                }
+            ]
+        }
+    }
+}

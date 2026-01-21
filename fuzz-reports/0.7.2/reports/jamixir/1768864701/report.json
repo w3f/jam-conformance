@@ -1,0 +1,76 @@
+{
+    "config": {
+        "seed": "42",
+        "max_steps": 4294967295,
+        "safrole": false,
+        "profile": {
+            "full": null
+        },
+        "fuzzy_profile": {
+            "full": null
+        },
+        "max_work_items": 3,
+        "mutation_ratio": 0.0,
+        "max_mutations": 0
+    },
+    "stats": {
+        "steps": 1,
+        "imported": 1,
+        "import_max_step": 1,
+        "import_min": 19.739938,
+        "import_max": 19.739938,
+        "import_mean": 19.739938,
+        "import_p50": 19.739938,
+        "import_p75": 0.0,
+        "import_p90": 19.739938,
+        "import_p99": 0.0,
+        "import_std_dev": 0.0
+    },
+    "target": {
+        "info": {
+            "fuzz_version": 1,
+            "fuzz_features": 2,
+            "jam_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_version": {
+                "major": 0,
+                "minor": 2,
+                "patch": 6
+            },
+            "app_name": "Jamixir"
+        },
+        "stats": {
+            "steps": 1,
+            "imported": 1,
+            "import_max_step": 1,
+            "import_min": 228.302246,
+            "import_max": 228.302246,
+            "import_mean": 228.302246,
+            "import_p50": 228.302246,
+            "import_p75": 0.0,
+            "import_p90": 228.302246,
+            "import_p99": 0.0,
+            "import_std_dev": 0.0
+        }
+    },
+    "error": {
+        "state_diff": {
+            "roots": {
+                "exp": "0x3ae9ea5f9ea0ef669b6f0a89be3a85c88bc8e42918fc35366099df9cf2a1f215",
+                "got": "0x3842995d2710e444555659698948516a7a76a6aac2a719028c80b63972e52919"
+            },
+            "keyvals": [
+                {
+                    "key": "0xff7a004200aa00af0000000000000000000000000000000000000000000000",
+                    "diff": {
+                        "exp": "0x0000000000000000000000000000000000000000000000000000000000000000000a6b050000000000000000000000000000000000000000008e39020000000000000000000000000002000000c63900000c3a000016a20e77",
+                        "got": "0x"
+                    }
+                }
+            ]
+        }
+    }
+}
