@@ -1,0 +1,163 @@
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.25s
+latest-amd64: Pulling from methodfive/javajam
+Digest: sha256:fda1e7de67d125d4cd0c612ea3389e3016efbdc731ba3bd30ed4a4026a3dd168
+Status: Image is up to date for ghcr.io/methodfive/javajam:latest-amd64
+ghcr.io/methodfive/javajam:latest-amd64
+Downloading javajam for linux...
+Pulling Docker image: ghcr.io/methodfive/javajam:latest-amd64
+Successfully pulled Docker image: ghcr.io/methodfive/javajam:latest-amd64
+Building polkajam-fuzz binary
+Getting GP version from polkajam-fuzz
+Detected GP version from polkajam-fuzz: 0.7.2
+Setting JAM spec: tiny
+['javajam']
+* Downloading target: javajam
+
+==================================================
+Running fuzzer local workflow for javajam
+==================================================
+
+* Running target: javajam
+Starting target with command: /home/ubuntu/w3f-jam-conformance/scripts/target.py run javajam --container-name javajam-1768864701
+Target output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1768864701/logs/target_javajam.log
+Target started with PID: 4104
+Target socket /tmp/jam_fuzz_1768864701.sock is ready.
+Running cargo command: cargo run --release -p polkajam-fuzz -- --source local --max-steps 1000000000 --step-period 0 --safrole false --seed fcfe611e223554df --max-work-items 5 --single-step false --profile fuzzy --fuzzy-profile rand --trace-dir /home/ubuntu/w3f-jam-conformance/scripts/sessions/1768864701/trace --target-sock /tmp/jam_fuzz_1768864701.sock --mutation-ratio 0.1 --max-mutations 0 --verbosity 1 --pvm-interpreter-backend
+Fuzzer output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1768864701/logs/fuzzer_javajam.log
+Fuzzer completed with error code: 1
+Check /home/ubuntu/w3f-jam-conformance/scripts/sessions/1768864701/logs/fuzzer_javajam.log for detailed output.
+* Terminating target process with PID: 4104
+Target process terminated successfully
+-----------------------------------------------
+Generating report from traces...
+* Report dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1768864701/report
+* Traces dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1768864701/trace
+  - depth 2
+  - prune False
+-----------------------------------------------
+
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1768864701/trace/00014908.bin
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1768864701/trace/00014907.bin
+* Processing report.bin if it exists
+Creating report.json file in /home/ubuntu/w3f-jam-conformance/scripts/sessions/1768864701/report
+Copying /home/ubuntu/w3f-jam-conformance/scripts/sessions/1768864701/trace/report.bin to /home/ubuntu/w3f-jam-conformance/scripts/sessions/1768864701/report
+* Publishing report
+* Publish report traces
+Skipping non-trace file report.bin
+Copying trace file 00014908.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1768864701
+Copying trace file 00014908.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1768864701
+Copying trace file 00014907.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1768864701
+Skipping non-trace file report.json
+Copying trace file 00014907.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1768864701
+Traces copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1768864701
+* Publish report
+Copying report file report.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/javajam/1768864701
+Copying report file report.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/javajam/1768864701
+Reports copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/javajam/1768864701
+
+--------------------------------------------------
+fuzzer_javajam.log tail
+--------------------------------------------------
+Dumping contents of log file: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1768864701/logs/fuzzer_javajam.log
+2026-01-19 23:27:53 [s=14908] fuzz::assurances  Submitting assurance for val=3, cores=[1]
+2026-01-19 23:27:53 [s=14908] fuzz::assurances  Submitting assurance for val=4, cores=[0, 1]
+2026-01-19 23:27:53 [s=14908] fuzz::assurances  Submitting assurance for val=5, cores=[0, 1]
+2026-01-19 23:27:53 [s=14908]   @0#88048f4a Refine, 88048f4a, payload len=63
+2026-01-19 23:27:53 [s=14908]   @0#1991f79f Refine, 1991f79f, payload len=63
+2026-01-19 23:27:53 [s=14908]   @0#124b0795 Refine, 124b0795, payload len=63
+2026-01-19 23:27:53 [s=14908] fuzz::fuzzer  Importing: 41b44df1c51b82391eb35d0fb83770cad774b7901dab8048f1ac1b2d2f272d91 (author=0, slot=14908, parent=0x1b7781b24c4c1d52...)
+2026-01-19 23:27:53 [s=14908]   #3b76a781 Accumulate (now=14908, bal = $247044)
+2026-01-19 23:27:53 [s=14908] fuzzy-preimages  #3b76a781 Update
+2026-01-19 23:27:53 [s=14908] fuzzy-preimages  #3b76a781 Selected instruction: TransferHostCall
+2026-01-19 23:27:53 [s=14908]   #3bc15c6 Accumulate (now=14908, bal = $392292)
+2026-01-19 23:27:53 [s=14908]   #51a22736 Accumulate (now=14908, bal = $383790)
+2026-01-19 23:27:53 [s=14908] fuzzy-misc  #3bc15c6 Update
+2026-01-19 23:27:53 [s=14908] fuzzy-misc  #3bc15c6 Selected instruction: InvalidHostCall
+2026-01-19 23:27:53 [s=14908] fuzzy-misc  #3bc15c6 Update
+2026-01-19 23:27:53 [s=14908] fuzzy-misc  #3bc15c6 Selected instruction: InfoHostCall
+2026-01-19 23:27:53 [s=14908]   #1991f79f Accumulate (now=14908, bal = $464950)
+2026-01-19 23:27:53 [s=14908] fuzzy-preimages  #1991f79f Update
+2026-01-19 23:27:53 [s=14908] fuzzy-preimages  #1991f79f Selected instruction: CheckpointHostCall
+2026-01-19 23:27:53 [s=14908] fuzzy-preimages  #1991f79f Selected instruction: QueryHostCall
+2026-01-19 23:27:53 [s=14908] boot  #0 Bootstrap Service Accumulate, 0h @14908 $18446744073704989035
+2026-01-19 23:27:53 [s=14908]   #f064cc07 Accumulate (now=14908, bal = $383927)
+2026-01-19 23:27:53 [s=14908]   #124b0795 Accumulate (now=14908, bal = $418455)
+2026-01-19 23:27:53 [s=14908] boot  #0 Ejecting service #afaa427a with code_hash 0x857b103cd9a9cd73...
+2026-01-19 23:27:53 [s=14908] boot  #0 Result: Ok(())
+2026-01-19 23:27:53 [s=14908] fuzzy-misc  #124b0795 Update
+2026-01-19 23:27:53 [s=14908] fuzzy-misc  #124b0795 Selected instruction: InvalidHostCall
+2026-01-19 23:27:53 [s=14908] service  Failed to read hash from memory: OutOfRangeAccess { address: 1826748287, length: 32 } [6ce1f77f+20]
+2026-01-19 23:27:53 [s=14908] fuzzy-preimages  #f064cc07 Update
+2026-01-19 23:27:53 [s=14908] fuzzy-preimages  #f064cc07 Selected instruction: ForgetHostCall
+2026-01-19 23:27:53 [s=14908] service  Failed to read hash from memory: OutOfRangeAccess { address: 1851508181, length: 32 } [6e5bc5d5+20]
+2026-01-19 23:27:53 [s=14908] fuzz::fuzzer  Imported 41b44df1c51b82391eb35d0fb83770cad774b7901dab8048f1ac1b2d2f272d91 
+2026-01-19 23:27:53 [s=14908] fuzz::fuzzer  State root: 3ae9ea5f9ea0ef669b6f0a89be3a85c88bc8e42918fc35366099df9cf2a1f215
+2026-01-19 23:27:53 [s=14908] fuzz::fuzzer  Local/remote state root mismatch
+2026-01-19 23:27:53 [s=14908] fuzz::fuzzer  local_imported = true, remote imported=true
+2026-01-19 23:27:53 [s=14908] fuzz::fuzzer  Terminating after 14908 steps with result: Err(StateMismatch(Report { config: ReportConfig { seed: "fcfe611e223554df", max_steps: 1000000000, safrole: false, profile: Fuzzy, fuzzy_profile: Rand, max_work_items: 5, mutation_ratio: 0.1, max_mutations: 0 }, stats: Statistics { steps: 14908, imported: 14656, import_max_step: 11298, import_min: 1.4974299999999998, import_max: 394.238711, import_mean: 6.488064847298054, import_p50: 5.802, import_p75: 7.903, import_p90: 10.912, import_p99: 84.684, import_std_dev: 13.420505982793346, support: StatisticsSupport { total_samples: 10000, import_durations_count: 5627 } }, target: Some(TargetInfo { info: PeerInfo { fuzz_version: 1, fuzz_features: 2, jam_version: Version { major: 0, minor: 7, patch: 2 }, app_version: Version { major: 0, minor: 3, patch: 23 }, app_name: "JavaJAM" }, stats: Statistics { steps: 14908, imported: 14656, import_max_step: 11973, import_min: 1.7222220000000001, import_max: 271.391361, import_mean: 9.3330986665529, import_p50: 8.964, import_p75: 14.523, import_p90: 21.291, import_p99: 69.926, import_std_dev: 11.989755702594215, support: StatisticsSupport { total_samples: 10000, import_durations_count: 7551 } } }), error: Some(StateDiff(StateDiff)) }))
+
+==================================================
+==================== REPORT ======================
+==================================================
+
+Configuration
+-------------
+seed = fcfe611e223554df
+max_steps = 1000000000
+safrole = false
+profile = fuzzy
+fuzzy_profile = rand
+max_work_items = 5
+mutation_ratio = 0.10
+max_mutations = 0
+
+Local Statistics
+----------------
+steps = 14908
+imported = 14656
+import_min = 1.50 ms
+import_max = 394.24 ms
+import_max_step = 11298
+import_mean = 6.49 ms
+import_p50 = 5.80 ms
+import_p75 = 7.90 ms
+import_p90 = 10.91 ms
+import_p99 = 84.68 ms
+import_std_dev = 13.42 ms
+
+Target Info
+-----------
+javajam-0.3.23_gp-0.7.2
+
+Target Statistics
+-----------------
+steps = 14908
+imported = 14656
+import_min = 1.72 ms
+import_max = 271.39 ms
+import_max_step = 11973
+import_mean = 9.33 ms
+import_p50 = 8.96 ms
+import_p75 = 14.52 ms
+import_p90 = 21.29 ms
+import_p99 = 69.93 ms
+import_std_dev = 11.99 ms
+
+State Root Mismatch
+-------------------
+Expected: 3ae9ea5f9ea0ef669b6f0a89be3a85c88bc8e42918fc35366099df9cf2a1f215
+Reported: 3842995d2710e444555659698948516a7a76a6aac2a719028c80b63972e52919
+
+State Differences
+-----------------
+[K]: State key
+[L]: Expected value
+[T]: Target value
+
+[K] ff7a004200aa00af0000000000000000000000000000000000000000000000
+[L] 0000000000000000000000000000000000000000000000000000000000000000000a6b050000000000000000000000000000000000000000008e39020000000000000000000000000002000000c63900000c3a000016a20e77
+[T] 
+
+
+--------------------------------------------------
+
