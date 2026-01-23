@@ -17,12 +17,12 @@
         "steps": 1,
         "imported": 1,
         "import_max_step": 1,
-        "import_min": 23.312393,
-        "import_max": 23.312393,
-        "import_mean": 23.312393,
-        "import_p50": 23.312393,
+        "import_min": 25.04474,
+        "import_max": 25.04474,
+        "import_mean": 25.04474,
+        "import_p50": 25.04474,
         "import_p75": 0.0,
-        "import_p90": 23.312393,
+        "import_p90": 25.04474,
         "import_p99": 0.0,
         "import_std_dev": 0.0
     },
@@ -38,7 +38,7 @@
             "app_version": {
                 "major": 0,
                 "minor": 3,
-                "patch": 23
+                "patch": 24
             },
             "app_name": "JavaJAM"
         },
@@ -46,12 +46,12 @@
             "steps": 1,
             "imported": 1,
             "import_max_step": 1,
-            "import_min": 307.859913,
-            "import_max": 307.859913,
-            "import_mean": 307.859913,
-            "import_p50": 307.859913,
+            "import_min": 122.893377,
+            "import_max": 122.893377,
+            "import_mean": 122.893377,
+            "import_p50": 122.893377,
             "import_p75": 0.0,
-            "import_p90": 307.859913,
+            "import_p90": 122.893377,
             "import_p99": 0.0,
             "import_std_dev": 0.0
         }

@@ -17,12 +17,12 @@
         "steps": 1,
         "imported": 1,
         "import_max_step": 1,
-        "import_min": 17.465215,
-        "import_max": 17.465215,
-        "import_mean": 17.465215,
-        "import_p50": 17.465215,
+        "import_min": 16.72012,
+        "import_max": 16.72012,
+        "import_mean": 16.72012,
+        "import_p50": 16.72012,
         "import_p75": 0.0,
-        "import_p90": 17.465215,
+        "import_p90": 16.72012,
         "import_p99": 0.0,
         "import_std_dev": 0.0
     },
@@ -46,12 +46,12 @@
             "steps": 1,
             "imported": 1,
             "import_max_step": 1,
-            "import_min": 1226.124604,
-            "import_max": 1226.124604,
-            "import_mean": 1226.124604,
-            "import_p50": 1226.124604,
+            "import_min": 1244.9213889999999,
+            "import_max": 1244.9213889999999,
+            "import_mean": 1244.9213889999999,
+            "import_p50": 1244.9213889999999,
             "import_p75": 0.0,
-            "import_p90": 1226.124604,
+            "import_p90": 1244.9213889999999,
             "import_p99": 0.0,
             "import_std_dev": 0.0
         }
@@ -60,16 +60,9 @@
         "state_diff": {
             "roots": {
                 "exp": "0x3ae9ea5f9ea0ef669b6f0a89be3a85c88bc8e42918fc35366099df9cf2a1f215",
-                "got": "0xf74f1d76bcd0475c74b022110e0cb5f06cdf55c9b15cc2d2c98c31b095817d34"
+                "got": "0x3842995d2710e444555659698948516a7a76a6aac2a719028c80b63972e52919"
             },
             "keyvals": [
-                {
-                    "key": "0xff000000000000000000000000000000000000000000000000000000000000",
-                    "diff": {
-                        "exp": "0x00605908a552dd4bc6caf29b06082d189ea75d9839550a66dc43c364179b56369a2905bfffffffffff0a000000000000000a00000000000000545b020000000000ffffffffffffffff63000000000000003c3a000000000000",
-                        "got": "0x00605908a552dd4bc6caf29b06082d189ea75d9839550a66dc43c364179b56369a75ccbfffffffffff0a000000000000000a00000000000000545b020000000000ffffffffffffffff63000000000000003c3a000000000000"
-                    }
-                },
                 {
                     "key": "0xff7a004200aa00af0000000000000000000000000000000000000000000000",
                     "diff": {
