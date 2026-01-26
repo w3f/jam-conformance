@@ -1,0 +1,76 @@
+{
+    "config": {
+        "seed": "42",
+        "max_steps": 4294967295,
+        "safrole": false,
+        "profile": {
+            "full": null
+        },
+        "fuzzy_profile": {
+            "full": null
+        },
+        "max_work_items": 3,
+        "mutation_ratio": 0.0,
+        "max_mutations": 0
+    },
+    "stats": {
+        "steps": 1,
+        "imported": 1,
+        "import_max_step": 1,
+        "import_min": 18.143841000000002,
+        "import_max": 18.143841000000002,
+        "import_mean": 18.143841000000002,
+        "import_p50": 18.143841000000002,
+        "import_p75": 0.0,
+        "import_p90": 18.143841000000002,
+        "import_p99": 0.0,
+        "import_std_dev": 0.0
+    },
+    "target": {
+        "info": {
+            "fuzz_version": 1,
+            "fuzz_features": 2,
+            "jam_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_name": "jampy"
+        },
+        "stats": {
+            "steps": 1,
+            "imported": 1,
+            "import_max_step": 1,
+            "import_min": 1352.930459,
+            "import_max": 1352.930459,
+            "import_mean": 1352.930459,
+            "import_p50": 1352.930459,
+            "import_p75": 0.0,
+            "import_p90": 1352.930459,
+            "import_p99": 0.0,
+            "import_std_dev": 0.0
+        }
+    },
+    "error": {
+        "state_diff": {
+            "roots": {
+                "exp": "0x57fc09423fd535f54a75c0fd9743c736cdd8db12f0d241ea0624b1eb7bfd403e",
+                "got": "0xc8c9dc8141e2ce7a6228f443379d3cea41cf832cf2a52ffdd99a83b2d16616c3"
+            },
+            "keyvals": [
+                {
+                    "key": "0x0c000000000000000000000000000000000000000000000000000000000000",
+                    "diff": {
+                        "exp": "0x000000000000000000000000d4d682140000000000",
+                        "got": "0x000000000000000000000000000000000000000000"
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "config": {
+        "seed": "42",
+        "max_steps": 4294967295,
+        "safrole": false,
+        "profile": {
+            "full": null
+        },
+        "fuzzy_profile": {
+            "full": null
+        },
+        "max_work_items": 3,
+        "mutation_ratio": 0.0,
+        "max_mutations": 0
+    },
+    "stats": {
+        "steps": 1,
+        "imported": 1,
+        "import_max_step": 1,
+        "import_min": 14.483657000000001,
+        "import_max": 14.483657000000001,
+        "import_mean": 14.483657000000001,
+        "import_p50": 14.483657000000001,
+        "import_p75": 0.0,
+        "import_p90": 14.483657000000001,
+        "import_p99": 0.0,
+        "import_std_dev": 0.0
+    },
+    "target": {
+        "info": {
+            "fuzz_version": 1,
+            "fuzz_features": 2,
+            "jam_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_name": "jampy"
+        },
+        "stats": {
+            "steps": 1,
+            "imported": 1,
+            "import_max_step": 1,
+            "import_min": 1398.4776160000001,
+            "import_max": 1398.4776160000001,
+            "import_mean": 1398.4776160000001,
+            "import_p50": 1398.4776160000001,
+            "import_p75": 0.0,
+            "import_p90": 1398.4776160000001,
+            "import_p99": 0.0,
+            "import_std_dev": 0.0
+        }
+    },
+    "error": {
+        "state_diff": {
+            "roots": {
+                "exp": "0xd410213183e4e99ae39319d92f2252dbf6115d01a4450da3f1bc2abc68d6c09f",
+                "got": "0x12604b321b486bbf9a3daa98ec050aa65c31ccf3a3507b0ade0f1cf7b2809dcf"
+            },
+            "keyvals": [
+                {
+                    "key": "0x0c000000000000000000000000000000000000000000000000000000000000",
+                    "diff": {
+                        "exp": "0x0000000000000000000000000c5e723b0000000000",
+                        "got": "0x000000000000000000000000000000000000000000"
+                    }
+                }
+            ]
+        }
+    }
+}
