@@ -1,0 +1,76 @@
+{
+    "config": {
+        "seed": "42",
+        "max_steps": 4294967295,
+        "safrole": false,
+        "profile": {
+            "full": null
+        },
+        "fuzzy_profile": {
+            "full": null
+        },
+        "max_work_items": 3,
+        "mutation_ratio": 0.0,
+        "max_mutations": 0
+    },
+    "stats": {
+        "steps": 1,
+        "imported": 1,
+        "import_max_step": 1,
+        "import_min": 326.906554,
+        "import_max": 326.906554,
+        "import_mean": 326.906554,
+        "import_p50": 326.906554,
+        "import_p75": 0.0,
+        "import_p90": 326.906554,
+        "import_p99": 0.0,
+        "import_std_dev": 0.0
+    },
+    "target": {
+        "info": {
+            "fuzz_version": 1,
+            "fuzz_features": 2,
+            "jam_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_version": {
+                "major": 0,
+                "minor": 1,
+                "patch": 2
+            },
+            "app_name": "jam-forge"
+        },
+        "stats": {
+            "steps": 1,
+            "imported": 1,
+            "import_max_step": 1,
+            "import_min": 1168.321914,
+            "import_max": 1168.321914,
+            "import_mean": 1168.321914,
+            "import_p50": 1168.321914,
+            "import_p75": 0.0,
+            "import_p90": 1168.321914,
+            "import_p99": 0.0,
+            "import_std_dev": 0.0
+        }
+    },
+    "error": {
+        "state_diff": {
+            "roots": {
+                "exp": "0xd269f28c1b774e3e336f5a1eb36b2e4dc2966a5187dad0a93b665d5f265d3286",
+                "got": "0xe26da12ebda67298f21d634763b2ae27a0ad4de150aa67cd6cd7d38ba32ee71f"
+            },
+            "keyvals": [
+                {
+                    "key": "0x0e000000000000000000000000000000000000000000000000000000000000",
+                    "diff": {
+                        "exp": "0x000000000000019d11621649b22f4d9883e8e7498a4614eb1f6c387b9efd78a20447ff780bcf1f1f0500007416d7b92342421b1a24a10f2966501522c198ab2f7c923f6aa1da48e45b9805000000000000000000000000000000000000000000000000000000000000000000000f9a69ea86d804c75cd0f41118e9a68e14d80969f8c68a89d9d79406a60258408a4835b6c59f6a202916a60eed62c9224e8ca0a1cf6525e809557400d7445a62e5484ae44a667fbfe76cefcfd1015aa3d5de3ec6d837e6e9dcd4de933b5b3f3e0f9a69ea86d804c75cd0f41118e9a68e14d80969f8c68a89d9d79406a602584044080000030913ee0428229f29c6968dc4249d219b5f528064cf6be122d97f77335fbf24ae58fea1006ec76c8c44660401c69d761eee10d635385a117f51ffaac9eb01283e7eb532bc244ba1eac0503677a1b90b41b0b4a52a816c159007160c437bdf6b3d012357426f2313559a271d6782dc00197b379f79cbe3c6a1e72f61f7b592c509f8030000012b951c52857b103cd9a9cd73e653a5b384c2732af31b8c3e2df87b148fc132e392832bc162fcc4143cc49c847cc9262957c04f528013be7ad91a61210c953b662ddbf3b58096980000000000004b01011200000000dd14e5038aa0061b62f665204106fe247cc7312a18c4ed2c230f193d2b951c5203b2eb5fbac250745b27c7888707f1953e12f19532984aa9bdf3b2b5cb8570bf68bce2e88b5a0007829300010913ee0428229f29c6968dc4249d219b5f528064cf6be122d97f77335fbf24ae0000000000",
+                        "got": "0x000000000000019d11621649b22f4d9883e8e7498a4614eb1f6c387b9efd78a20447ff780bcf1f1f0500007416d7b92342421b1a24a10f2966501522c198ab2f7c923f6aa1da48e45b9805000000000000000000000000000000000000000000000000000000000000000000000f9a69ea86d804c75cd0f41118e9a68e14d80969f8c68a89d9d79406a60258408a4835b6c59f6a202916a60eed62c9224e8ca0a1cf6525e809557400d7445a62e5484ae44a667fbfe76cefcfd1015aa3d5de3ec6d837e6e9dcd4de933b5b3f3e0f9a69ea86d804c75cd0f41118e9a68e14d80969f8c68a89d9d79406a602584044080000030913ee0428229f29c6968dc4249d219b5f528064cf6be122d97f77335fbf24ae58fea1006ec76c8c44660401c69d761eee10d635385a117f51ffaac9eb01283e7eb532bc244ba1eac0503677a1b90b41b0b4a52a816c159007160c437bdf6b3d012357426f2313559a271d6782dc00197b379f79cbe3c6a1e72f61f7b592c509f8030000012b951c52857b103cd9a9cd73e653a5b384c2732af31b8c3e2df87b148fc132e392832bc162fcc4143cc49c847cc9262957c04f528013be7ad91a61210c953b662ddbf3b58096980000000000004b01011200000000dd14e5038aa0061b62f665204106fe247cc7312a18c4ed2c230f193d2b951c5203b2eb5fbac250745b27c7888707f1953e12f19532984aa9bdf3b2b5cb8570bf68bce2e88b5a0007829300020913ee0428229f29c6968dc4249d219b5f528064cf6be122d97f77335fbf24ae7eb532bc244ba1eac0503677a1b90b41b0b4a52a816c159007160c437bdf6b3d0000000000"
+                    }
+                }
+            ]
+        }
+    }
+}
