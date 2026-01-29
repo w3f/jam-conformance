@@ -4,6 +4,9 @@
 # This script takes a session folder and regenerates reports from the traces found there.
 # It mimics the report generation logic from fuzz-workflow.py but works on existing sessions.
 
+# example command: scripts/.venv/bin/python3 scripts/generate-session-reports.py scripts/sessions/<session-number> --spec tiny
+# (target is auto-detected from logs, but can be overridden with --target)
+
 import json
 import os
 import re
@@ -58,8 +61,8 @@ def parse_command_line_args():
     parser.add_argument(
         "--target",
         type=str,
-        default="unknown",
-        help="Target name (required if using --report-publish)",
+        default=None,
+        help="Target name (auto-detected from logs if not specified)",
     )
     parser.add_argument(
         "--spec",
@@ -206,6 +209,26 @@ def generate_report(session_trace_dir, session_report_dir, report_depth, report_
     process_report_file(session_trace_dir, session_report_dir)
 
 
+def detect_target_from_logs(session_dir):
+    """Auto-detect target name from log filenames"""
+    logs_dir = os.path.join(session_dir, "logs")
+
+    if not os.path.exists(logs_dir):
+        return None
+
+    # Look for fuzzer_*.log or target_*.log files
+    log_files = os.listdir(logs_dir)
+    for log_file in log_files:
+        # Match fuzzer_{target}.log or target_{target}.log
+        match = re.match(r'(?:fuzzer|target)_(.+)\.log$', log_file)
+        if match:
+            target = match.group(1)
+            print(f"Auto-detected target from logs: {target}")
+            return target
+
+    return None
+
+
 def publish_report_traces(session_report_dir, session_id, gp_version):
     """Publish trace files to the jam-conformance directory"""
     print("* Publish report traces")
@@ -272,6 +295,13 @@ def main():
     # Get session ID from directory name
     session_id = os.path.basename(session_dir)
     print(f"Processing session: {session_id}")
+
+    # Auto-detect target if not specified
+    if args.target is None:
+        args.target = detect_target_from_logs(session_dir)
+        if args.target is None:
+            args.target = "unknown"
+            print("Warning: Could not auto-detect target from logs. Using 'unknown'.")
 
     # Define directories
     session_trace_dir = os.path.join(session_dir, "trace")
