@@ -1,0 +1,60 @@
+{
+    "config": {
+        "seed": "1769425410_3499",
+        "max_steps": 100000,
+        "safrole": false,
+        "profile": {
+            "fuzzy": null
+        },
+        "fuzzy_profile": {
+            "rand": null
+        },
+        "max_work_items": 5,
+        "mutation_ratio": 0.1,
+        "max_mutations": 0
+    },
+    "stats": {
+        "steps": 100000,
+        "imported": 98134,
+        "import_max_step": 2009,
+        "import_min": 1.540415,
+        "import_max": 1553.206252,
+        "import_mean": 10.666862206340515,
+        "import_p50": 19.248,
+        "import_p75": 28.696,
+        "import_p90": 122.72,
+        "import_p99": 152.012,
+        "import_std_dev": 19.155457954675736
+    },
+    "target": {
+        "info": {
+            "fuzz_version": 1,
+            "fuzz_features": 2,
+            "jam_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_name": "tsjam-0.7.2-tiny-3d5d2d85"
+        },
+        "stats": {
+            "steps": 100000,
+            "imported": 98134,
+            "import_max_step": 1559,
+            "import_min": 10.826461,
+            "import_max": 2049.806458,
+            "import_mean": 223.54486321192485,
+            "import_p50": 650.03,
+            "import_p75": 769.71,
+            "import_p90": 914.163,
+            "import_p99": 1266.247,
+            "import_std_dev": 217.00548702176548
+        }
+    },
+    "error": null
+}
