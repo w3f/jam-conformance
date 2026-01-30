@@ -1,0 +1,83 @@
+{
+    "config": {
+        "seed": "42",
+        "max_steps": 4294967295,
+        "safrole": false,
+        "profile": {
+            "full": null
+        },
+        "fuzzy_profile": {
+            "full": null
+        },
+        "max_work_items": 3,
+        "mutation_ratio": 0.0,
+        "max_mutations": 0
+    },
+    "stats": {
+        "steps": 1,
+        "imported": 1,
+        "import_max_step": 1,
+        "import_min": 8.661049,
+        "import_max": 8.661049,
+        "import_mean": 8.661049,
+        "import_p50": 8.661049,
+        "import_p75": 0.0,
+        "import_p90": 8.661049,
+        "import_p99": 0.0,
+        "import_std_dev": 0.0
+    },
+    "target": {
+        "info": {
+            "fuzz_version": 1,
+            "fuzz_features": 2,
+            "jam_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_version": {
+                "major": 0,
+                "minor": 0,
+                "patch": 2
+            },
+            "app_name": "strawberry"
+        },
+        "stats": {
+            "steps": 1,
+            "imported": 1,
+            "import_max_step": 1,
+            "import_min": 29.206046,
+            "import_max": 29.206046,
+            "import_mean": 29.206046,
+            "import_p50": 29.206046,
+            "import_p75": 0.0,
+            "import_p90": 29.206046,
+            "import_p99": 0.0,
+            "import_std_dev": 0.0
+        }
+    },
+    "error": {
+        "state_diff": {
+            "roots": {
+                "exp": "0x2138773c632042c72cd28fa723bd742eff550ab12070d9f0cad4b318a3e151f7",
+                "got": "0x81516c7802eb12684037eaf72781fcf9d7a20cfeccb7b6960d3d4cccee39c366"
+            },
+            "keyvals": [
+                {
+                    "key": "0x01d978d8adc729a728716601ff41b69f853105e6485a79109d4d3e252fb630",
+                    "diff": {
+                        "exp": "0x0f000000008e1c000329ad8f1860ece91a4905c0230178ad29098d802faf816d5091a4f15dbab6b389656f05ae8b21dee5e71ad6e7520bbdeba3f68cf6",
+                        "got": "0x10000000008e1c000329ad8f1860ece91a1026dd224905c0230178ad29098d802faf816d5091a4f15dbab6b389656f05ae8b21dee5e71ad6e7a3f68cf6d0438a3f"
+                    }
+                },
+                {
+                    "key": "0xff01007800ad00290000000000000000000000000000000000000000000000",
+                    "diff": {
+                        "exp": "0x00857b103cd9a9cd73e653a5b384c2732af31b8c3e2df87b148fc132e392832bc1791104000000000010270000000000001027000000000000066702000000000000000000000000000a0000007cc00000acc0000000000000",
+                        "got": "0x00857b103cd9a9cd73e653a5b384c2732af31b8c3e2df87b148fc132e392832bc17911040000000000102700000000000010270000000000000a6702000000000000000000000000000a0000007cc00000acc0000000000000"
+                    }
+                }
+            ]
+        }
+    }
+}

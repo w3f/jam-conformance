@@ -1,0 +1,76 @@
+{
+    "config": {
+        "seed": "42",
+        "max_steps": 4294967295,
+        "safrole": false,
+        "profile": {
+            "full": null
+        },
+        "fuzzy_profile": {
+            "full": null
+        },
+        "max_work_items": 3,
+        "mutation_ratio": 0.0,
+        "max_mutations": 0
+    },
+    "stats": {
+        "steps": 1,
+        "imported": 1,
+        "import_max_step": 1,
+        "import_min": 11.786560999999999,
+        "import_max": 11.786560999999999,
+        "import_mean": 11.786560999999999,
+        "import_p50": 11.786560999999999,
+        "import_p75": 0.0,
+        "import_p90": 11.786560999999999,
+        "import_p99": 0.0,
+        "import_std_dev": 0.0
+    },
+    "target": {
+        "info": {
+            "fuzz_version": 1,
+            "fuzz_features": 2,
+            "jam_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_version": {
+                "major": 0,
+                "minor": 0,
+                "patch": 1
+            },
+            "app_name": "gossamer-jam"
+        },
+        "stats": {
+            "steps": 1,
+            "imported": 1,
+            "import_max_step": 1,
+            "import_min": 66.712119,
+            "import_max": 66.712119,
+            "import_mean": 66.712119,
+            "import_p50": 66.712119,
+            "import_p75": 0.0,
+            "import_p90": 66.712119,
+            "import_p99": 0.0,
+            "import_std_dev": 0.0
+        }
+    },
+    "error": {
+        "state_diff": {
+            "roots": {
+                "exp": "0xbe5d507ce1a2ef533d3a06e087bcc1e430cb859d908548cfdb87b22a80c41800",
+                "got": "0xec145035103ddcf665c65d8dcac5bc3f64276b3c69604ad9fadc1b0f780735f2"
+            },
+            "keyvals": [
+                {
+                    "key": "0x24d7b8453bb7ddfec13e507a95e86ec03add50794acc76edd9370aca5ecbf2",
+                    "diff": {
+                        "exp": "0x3d7523ec0746828f",
+                        "got": "0x6d619ee5e571f598"
+                    }
+                }
+            ]
+        }
+    }
+}
