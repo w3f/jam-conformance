@@ -2,3 +2,4 @@ sessions/
 target
 scripts/*.log
 scripts/.venv
+scripts/fuzz_sequential.sh
