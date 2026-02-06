@@ -1,0 +1,9 @@
+{
+  "alias": "EVE",
+  "seed": "0x0400000004000000040000000400000004000000040000000400000004000000",
+  "bandersnatch": "0x151e5c8fe2b9d8a606966a79edd2f9e5db47e83947ce368ccba53bf6ba20a40b",
+  "ed25519": "0x8b8c5d436f92ecf605421e873a99ec528761eb52a88a2f9a057b3b3003e6f32a",
+  "bandersnatch_priv": "0xd76036a8590b42b96cedb5fde7620f748ab48e7676e5172e7d2d2a2d3bf4d506",
+  "ed25519_priv": "0xb4de9ebf8db5428930baa5a98d26679ab2a03eae7c791d582e6b75b7f018d0d4",
+  "dns_alt_name": "eled3vb5nse3n7cii6ybvtms5s2bdwvlkivc7cnwa33oatby4txka"
+}

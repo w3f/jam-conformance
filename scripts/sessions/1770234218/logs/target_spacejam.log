@@ -1,0 +1,5 @@
+Running 'spacejam' on docker image
+Command: './spacejam fuzz target /tmp/jam_fuzz_1770234218.sock'
+Container: 'spacejam-1770234218'
+Error: Docker image 'debian:stable-slim' not found locally.
+Please run: /home/ubuntu/jam-conformance/scripts/target.py get spacejam

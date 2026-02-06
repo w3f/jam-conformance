@@ -1,0 +1,9 @@
+{
+  "alias": "CAROL",
+  "seed": "0x0200000002000000020000000200000002000000020000000200000002000000",
+  "bandersnatch": "0x9326edb21e5541717fde24ec085000b28709847b8aab1ac51f84e94b37ca1b66",
+  "ed25519": "0xcab2b9ff25c2410fbe9b8a717abb298c716a03983c98ceb4def2087500b8e341",
+  "bandersnatch_priv": "0x9eedb70f53b6a7ae8bbbd3ce1b4125bd28e12868278ffb8ef83c42d18bc9d907",
+  "ed25519_priv": "0x0093c8c10a88ebbc99b35b72897a26d259313ee9bad97436a437d2e43aaafa0f",
+  "dns_alt_name": "ekwmt37xecoq6a7otkm4ux5gfmm4uwbat4bg5m223shckhaaxdpqa"
+}

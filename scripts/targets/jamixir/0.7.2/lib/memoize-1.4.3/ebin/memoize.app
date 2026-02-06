@@ -1,0 +1,13 @@
+{application,memoize,
+             [{config_mtime,1756822327},
+              {optional_applications,[]},
+              {applications,[kernel,stdlib,elixir,logger]},
+              {description,"A method caching macro for elixir using CAS on ETS"},
+              {modules,['Elixir.Memoize','Elixir.Memoize.Application',
+                        'Elixir.Memoize.Cache','Elixir.Memoize.CacheStrategy',
+                        'Elixir.Memoize.CacheStrategy.Default',
+                        'Elixir.Memoize.CacheStrategy.Eviction',
+                        'Elixir.Memoize.Config']},
+              {registered,[]},
+              {vsn,"1.4.3"},
+              {mod,{'Elixir.Memoize.Application',[]}}]}.

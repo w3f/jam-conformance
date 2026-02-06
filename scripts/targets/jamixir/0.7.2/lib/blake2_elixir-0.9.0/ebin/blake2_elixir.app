@@ -1,0 +1,10 @@
+{application,blake2_elixir,
+             [{config_mtime,1757405098},
+              {optional_applications,[]},
+              {applications,[kernel,stdlib,elixir,logger]},
+              {description,"Blake2 cryptographic hashing function for Elixir\n"},
+              {modules,['Elixir.Blake2','Elixir.Blake2.Blake2b',
+                        'Elixir.Blake2.Blake2bp','Elixir.Blake2.Blake2s',
+                        'Elixir.Blake2.Blake2sp']},
+              {registered,[]},
+              {vsn,"0.9.0"}]}.

@@ -1,0 +1,9 @@
+{
+  "alias": "ALICE",
+  "seed": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "bandersnatch": "0xff71c6c03ff88adb5ed52c9681de1629a54e702fc14729f6b50d2f0a76f185b3",
+  "ed25519": "0x4418fb8c85bb3985394a8c2756d3643457ce614546202a2f50b093d762499ace",
+  "bandersnatch_priv": "0x6137e585dec6e1cd7401ffc8bdfe1400f835a7ddae589ce0ed7b3054e00c9e00",
+  "ed25519_priv": "0x996542becdf1e78278dc795679c825faca2e9ed2bf101bf3c4a236d3ed79cf59",
+  "dns_alt_name": "eecgwpgwq3noky4ijm4jmvjtmuzv44qvigciusxakq5epnrfj2utb"
+}

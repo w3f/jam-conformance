@@ -1,0 +1,17 @@
+
+thread '<unnamed>' (24) panicked at /Users/clearloop/code/spacejam/crates/vm/src/host/general.rs:82:18:
+range end index 54 out of range for slice of length 27
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+Running 'spacejam' on docker image
+Command: './spacejam fuzz target /tmp/jam_fuzz_1770372755.sock'
+Container: 'spacejam-1770372755'
+Image: debian:stable-slim
+Image ID: 4448d44b91bf
+Created: 2026-02-02T00:00:00Z
+Container temp dir: /tmp/jam_spacejam-1770372755_cs2fr8b8
+Socket symlink: /tmp/jam_fuzz_1770372755.sock -> /tmp/jam_spacejam-1770372755_cs2fr8b8/jam_fuzz_1770372755.sock
+Ensuring no leftover container with name spacejam-1770372755...
+Waiting for target termination (pid=19620)
+Target process exited with status: 134
+Cleaning up Docker container spacejam-1770372755...
+Cleaned up container temp dir: /tmp/jam_spacejam-1770372755_cs2fr8b8

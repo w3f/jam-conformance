@@ -1,0 +1,23 @@
+## VM Arguments for Jamixir Release
+## Performance optimizations for binary-heavy, socket-intensive workload
+
+## Async threads (4x CPU cores for I/O intensive operations)
++A 64
+
+## Memory allocators - optimized for binary allocation
++MBas aobf
++MHas aobf
+
+## Garbage collection optimizations
++hms 8192
++hmbs 524288
++sfwi 1000
+
+## Additional performance settings
++stbt db
++scl false
++sub true
+
+## Process and port limits
++P 1048576
++Q 1048576

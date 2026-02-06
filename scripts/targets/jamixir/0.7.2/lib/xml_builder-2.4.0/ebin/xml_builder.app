@@ -1,0 +1,10 @@
+{application,xml_builder,
+             [{config_mtime,1756822328},
+              {optional_applications,[]},
+              {applications,[kernel,stdlib,elixir]},
+              {description,"XML builder for Elixir"},
+              {modules,['Elixir.XmlBuilder',
+                        'Elixir.XmlBuilder.Format.Indented',
+                        'Elixir.XmlBuilder.Format.None']},
+              {registered,[]},
+              {vsn,"2.4.0"}]}.
