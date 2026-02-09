@@ -1,0 +1,60 @@
+{
+    "config": {
+        "seed": "1770353498_6726",
+        "max_steps": 100000,
+        "safrole": false,
+        "profile": {
+            "fuzzy": null
+        },
+        "fuzzy_profile": {
+            "rand": null
+        },
+        "max_work_items": 5,
+        "mutation_ratio": 0.1,
+        "max_mutations": 0
+    },
+    "stats": {
+        "steps": 100000,
+        "imported": 98064,
+        "import_max_step": 10769,
+        "import_min": 1.731845,
+        "import_max": 1447.235467,
+        "import_mean": 15.085717336912667,
+        "import_p50": 20.755,
+        "import_p75": 80.767,
+        "import_p90": 254.388,
+        "import_p99": 297.346,
+        "import_std_dev": 39.66117592177207
+    },
+    "target": {
+        "info": {
+            "fuzz_version": 1,
+            "fuzz_features": 2,
+            "jam_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_version": {
+                "major": 0,
+                "minor": 3,
+                "patch": 25
+            },
+            "app_name": "JavaJAM"
+        },
+        "stats": {
+            "steps": 100000,
+            "imported": 98064,
+            "import_max_step": 39910,
+            "import_min": 3.351378,
+            "import_max": 162.49784400000001,
+            "import_mean": 13.141379888195317,
+            "import_p50": 25.684,
+            "import_p75": 39.665,
+            "import_p90": 52.992,
+            "import_p99": 97.947,
+            "import_std_dev": 9.325698538898175
+        }
+    },
+    "error": null
+}

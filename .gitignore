@@ -2,3 +2,4 @@ sessions/
 target
 .venv/
 scripts/*.log
+scripts/logs
