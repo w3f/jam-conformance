@@ -1,0 +1,90 @@
+{
+    "config": {
+        "seed": "42",
+        "max_steps": 4294967295,
+        "safrole": false,
+        "profile": {
+            "full": null
+        },
+        "fuzzy_profile": {
+            "full": null
+        },
+        "max_work_items": 3,
+        "mutation_ratio": 0.0,
+        "max_mutations": 0
+    },
+    "stats": {
+        "steps": 1,
+        "imported": 1,
+        "import_max_step": 1,
+        "import_min": 16.20582,
+        "import_max": 16.20582,
+        "import_mean": 16.20582,
+        "import_p50": 16.20582,
+        "import_p75": 0.0,
+        "import_p90": 16.20582,
+        "import_p99": 0.0,
+        "import_std_dev": 0.0
+    },
+    "target": {
+        "info": {
+            "fuzz_version": 1,
+            "fuzz_features": 2,
+            "jam_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_version": {
+                "major": 0,
+                "minor": 0,
+                "patch": 2
+            },
+            "app_name": "strawberry"
+        },
+        "stats": {
+            "steps": 1,
+            "imported": 1,
+            "import_max_step": 1,
+            "import_min": 60.852669999999996,
+            "import_max": 60.852669999999996,
+            "import_mean": 60.852669999999996,
+            "import_p50": 60.852669999999996,
+            "import_p75": 0.0,
+            "import_p90": 60.852669999999996,
+            "import_p99": 0.0,
+            "import_std_dev": 0.0
+        }
+    },
+    "error": {
+        "state_diff": {
+            "roots": {
+                "exp": "0x5b0757ccb7a39c3a0d0e895d5bcc3fbd8a6a0e5ea36b618d77ec538ab0b14c5d",
+                "got": "0xe911d91637ba55abb4873565b5408e9cfefdf65caff89775bc3544116e4290f5"
+            },
+            "keyvals": [
+                {
+                    "key": "0xba0d35c03e1172b5b0e6e203dd506fc618d51bfe6fba677490d19eccce9043",
+                    "diff": {
+                        "exp": "0x",
+                        "got": "0x00"
+                    }
+                },
+                {
+                    "key": "0xba2e35813e13727240a3aaf9b13278342852f4a035480490b7c826cbe5a4a7",
+                    "diff": {
+                        "exp": "0x",
+                        "got": "0x00"
+                    }
+                },
+                {
+                    "key": "0xbab135bc3ea072935948ad97b213c80881bf32b8a7894d8542a3693c479e29",
+                    "diff": {
+                        "exp": "0x",
+                        "got": "0x00"
+                    }
+                }
+            ]
+        }
+    }
+}

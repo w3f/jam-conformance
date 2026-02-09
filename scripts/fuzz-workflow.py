@@ -917,8 +917,20 @@ def run_targets_recursively(targets, parallel=False, rand_seed=False):
     env["JAM_FUZZ_SINGLE_TARGET"] = "1"  # Prevent recursive execution
 
     # Launch processes for all targets
+    MAX_CONCURRENT = 10
     processes = []
+    active_processes = []
     for target in targets:
+        # In parallel mode, wait if we've reached the concurrency limit
+        if parallel and len(active_processes) >= MAX_CONCURRENT:
+            while len(active_processes) >= MAX_CONCURRENT:
+                for ap in active_processes:
+                    if ap[1].poll() is not None:
+                        active_processes.remove(ap)
+                        break
+                else:
+                    time.sleep(0.5)
+
         # Generate unique session ID for each target
         session_id = f"{int(time.time())}_{random.randint(1000, 9999)}"
         target_env = env.copy()
@@ -934,6 +946,9 @@ def run_targets_recursively(targets, parallel=False, rand_seed=False):
         print(f"{'Launching' if parallel else 'Running'} target {target} with session {session_id}")
         proc = subprocess.Popen(cmd, env=target_env)
         processes.append((target, proc, session_id))
+
+        if parallel:
+            active_processes.append((target, proc, session_id))
 
         # In sequential mode, wait for each process to complete before launching the next
         if not parallel:
