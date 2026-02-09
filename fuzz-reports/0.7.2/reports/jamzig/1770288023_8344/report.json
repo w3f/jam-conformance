@@ -1,0 +1,62 @@
+{
+    "config": {
+        "seed": "1770288023_8344",
+        "max_steps": 1000000,
+        "safrole": false,
+        "profile": {
+            "fuzzy": null
+        },
+        "fuzzy_profile": {
+            "rand": null
+        },
+        "max_work_items": 5,
+        "mutation_ratio": 0.1,
+        "max_mutations": 0
+    },
+    "stats": {
+        "steps": 678620,
+        "imported": 665553,
+        "import_max_step": 221508,
+        "import_min": 1.5066929999999998,
+        "import_max": 1476.577053,
+        "import_mean": 10.643131285632597,
+        "import_p50": 114.355,
+        "import_p75": 121.731,
+        "import_p90": 135.731,
+        "import_p99": 190.839,
+        "import_std_dev": 17.48622682280675
+    },
+    "target": {
+        "info": {
+            "fuzz_version": 1,
+            "fuzz_features": 2,
+            "jam_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_version": {
+                "major": 0,
+                "minor": 1,
+                "patch": 0
+            },
+            "app_name": "jamzig-target"
+        },
+        "stats": {
+            "steps": 678619,
+            "imported": 665552,
+            "import_max_step": 222046,
+            "import_min": 1.916118,
+            "import_max": 7266.731350999999,
+            "import_mean": 30.74574395365,
+            "import_p50": 389.515,
+            "import_p75": 409.39,
+            "import_p90": 434.856,
+            "import_p99": 499.694,
+            "import_std_dev": 59.66443436886174
+        }
+    },
+    "error": {
+        "communication": "IO error: early eof (potential target crash)"
+    }
+}
