@@ -917,7 +917,7 @@ def run_targets_recursively(targets, parallel=False, rand_seed=False):
     env["JAM_FUZZ_SINGLE_TARGET"] = "1"  # Prevent recursive execution
 
     # Launch processes for all targets
-    MAX_CONCURRENT = 10
+    MAX_CONCURRENT = 5
     processes = []
     active_processes = []
     for target in targets:
