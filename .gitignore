@@ -1,2 +1,4 @@
 sessions/
 target
+scripts/logs
+scripts/.venv
