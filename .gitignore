@@ -3,3 +3,4 @@ target
 scripts/*.log
 scripts/.venv
 scripts/fuzz_sequential.sh
+scripts/logs
