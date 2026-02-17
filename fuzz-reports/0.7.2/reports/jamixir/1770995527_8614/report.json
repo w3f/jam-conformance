@@ -1,0 +1,62 @@
+{
+    "config": {
+        "seed": "1770995527_8614",
+        "max_steps": 100000,
+        "safrole": false,
+        "profile": {
+            "fuzzy": null
+        },
+        "fuzzy_profile": {
+            "rand": null
+        },
+        "max_work_items": 5,
+        "mutation_ratio": 0.1,
+        "max_mutations": 0
+    },
+    "stats": {
+        "steps": 12946,
+        "imported": 12736,
+        "import_max_step": 12946,
+        "import_min": 1.795114,
+        "import_max": 6359.641941999999,
+        "import_mean": 20.183142021278357,
+        "import_p50": 10.955,
+        "import_p75": 15.266,
+        "import_p90": 23.832,
+        "import_p99": 317.801,
+        "import_std_dev": 80.62275682231673
+    },
+    "target": {
+        "info": {
+            "fuzz_version": 1,
+            "fuzz_features": 2,
+            "jam_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_version": {
+                "major": 0,
+                "minor": 2,
+                "patch": 6
+            },
+            "app_name": "Jamixir"
+        },
+        "stats": {
+            "steps": 12945,
+            "imported": 12735,
+            "import_max_step": 12908,
+            "import_min": 10.05448,
+            "import_max": 2602.952408,
+            "import_mean": 86.51274597251756,
+            "import_p50": 70.12,
+            "import_p75": 111.059,
+            "import_p90": 200.007,
+            "import_p99": 455.18,
+            "import_std_dev": 103.06414087309547
+        }
+    },
+    "error": {
+        "communication": "Timeout waiting for peer (potential target crash)"
+    }
+}

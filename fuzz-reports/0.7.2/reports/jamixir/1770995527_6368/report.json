@@ -1,0 +1,76 @@
+{
+    "config": {
+        "seed": "1770995527_6368",
+        "max_steps": 100000,
+        "safrole": false,
+        "profile": {
+            "fuzzy": null
+        },
+        "fuzzy_profile": {
+            "rand": null
+        },
+        "max_work_items": 5,
+        "mutation_ratio": 0.1,
+        "max_mutations": 0
+    },
+    "stats": {
+        "steps": 4832,
+        "imported": 4775,
+        "import_max_step": 4577,
+        "import_min": 1.786744,
+        "import_max": 983.901965,
+        "import_mean": 13.980145738219857,
+        "import_p50": 8.042,
+        "import_p75": 10.745,
+        "import_p90": 14.366,
+        "import_p99": 277.142,
+        "import_std_dev": 46.73915120513324
+    },
+    "target": {
+        "info": {
+            "fuzz_version": 1,
+            "fuzz_features": 2,
+            "jam_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_version": {
+                "major": 0,
+                "minor": 2,
+                "patch": 6
+            },
+            "app_name": "Jamixir"
+        },
+        "stats": {
+            "steps": 4832,
+            "imported": 4775,
+            "import_max_step": 1,
+            "import_min": 9.309411,
+            "import_max": 1395.104233,
+            "import_mean": 80.6519894356023,
+            "import_p50": 54.653,
+            "import_p75": 86.066,
+            "import_p90": 177.344,
+            "import_p99": 371.101,
+            "import_std_dev": 87.37997115986742
+        }
+    },
+    "error": {
+        "state_diff": {
+            "roots": {
+                "exp": "0x84d7d98e2e6a10dd8b969e45fecb77c596c7c3479281a6deb32fb0191f3239c9",
+                "got": "0xb8d5853a8aac4b99f88d923e979774b44ad042b2e4a607c741a2cfe2de0151bd"
+            },
+            "keyvals": [
+                {
+                    "key": "0x1e29ab2ca6d1e840bc50d602526f4b46e8aca90eb8c77c165b6497cae7625f",
+                    "diff": {
+                        "exp": "0x03000000",
+                        "got": "0x02000000"
+                    }
+                }
+            ]
+        }
+    }
+}
