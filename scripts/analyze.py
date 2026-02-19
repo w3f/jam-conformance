@@ -43,8 +43,8 @@ def analyze_session(session_path):
     data = {
         "id": trace_id,
         "target_name": "UNKNOWN", # Default if report is missing
-        "steps": 0,     # Primary metric
-        "imported": 0,  # Secondary metric
+        "steps": 0,       # Primary metric
+        "imported": 0,    # Secondary metric
         "source": "UNKNOWN",
         "error": None
     }
@@ -83,7 +83,7 @@ def analyze_session(session_path):
         if highest_block > 0:
             data["imported"] = highest_block
             # In fallback mode, we assume steps ~ imported since we can't see failed steps
-            data["steps"] = highest_block 
+            data["steps"] = highest_block
             data["source"] = "Trace (Fallback)"
             if not data["error"]:
                 data["error"] = "No Report Found"
@@ -94,6 +94,7 @@ def main():
     # Setup Argument Parser
     parser = argparse.ArgumentParser(description="Analyze fuzzing session results.")
     parser.add_argument("--target", type=str, help="Filter results by Target Name (e.g., 'JavaJAM')", default=None)
+    parser.add_argument("--prefix", type=str, help="Filter results by session directory prefix (e.g., 'test_run_')", default=None)
     args = parser.parse_args()
 
     if not os.path.exists(SESSIONS_DIR):
@@ -114,6 +115,11 @@ def main():
         res = analyze_session(path)
 
         # --- FILTER LOGIC ---
+        if args.prefix:
+            # Check if the folder name (trace ID) starts with the prefix
+            if not res['id'].startswith(args.prefix):
+                continue
+                
         if args.target:
             # Case-insensitive check.
             if args.target.lower() not in res['target_name'].lower():
@@ -135,8 +141,12 @@ def main():
 
     # --- STATISTICS & BENCHMARK ---
     if not results:
-        if args.target:
-            print(f"No sessions found matching target: '{args.target}'")
+        filters_used = []
+        if args.target: filters_used.append(f"target: '{args.target}'")
+        if args.prefix: filters_used.append(f"prefix: '{args.prefix}'")
+        
+        if filters_used:
+            print(f"No sessions found matching: {', '.join(filters_used)}")
         else:
             print("No sessions found.")
         return
@@ -144,7 +154,7 @@ def main():
     # Calculate Totals
     total_steps = sum(r['steps'] for r in results)
     total_imported = sum(r['imported'] for r in results)
-    
+
     # Calculate Step Statistics
     step_counts = [r['steps'] for r in results]
     avg_steps = statistics.mean(step_counts)
@@ -156,7 +166,10 @@ def main():
 
     print("\n📊 --- FINAL SUMMARY ---")
     if args.target:
-        print(f"Filter Active:       {args.target}")
+        print(f"Target Filter Active:  {args.target}")
+    if args.prefix:
+        print(f"Prefix Filter Active:  {args.prefix}")
+        
     print(f"Total Runs Analyzed:   {len(results)}")
     print(f"Total Steps (GOAL):    {total_steps:,} / {BENCHMARK_GOAL:,}")
     print(f"Total Blocks Imported: {total_imported:,} (Informational)")

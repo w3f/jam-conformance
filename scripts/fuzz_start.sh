@@ -32,8 +32,8 @@ echo "------------------------------------------------"
 nohup python3 ./fuzz-workflow.py \
     --targets "${INSTANCES}${TARGET}" \
     --report-publish \
-    --rand-seed \
     --skip-get \
+    --rand-seed \
     --parallel > "$LOG_FILE" 2>&1 &
 
 FUZZ_PID=$!
