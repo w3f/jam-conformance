@@ -1,0 +1,62 @@
+{
+    "config": {
+        "seed": "ad0a18c7b1271294",
+        "max_steps": 100000,
+        "safrole": false,
+        "profile": {
+            "fuzzy": null
+        },
+        "fuzzy_profile": {
+            "rand": null
+        },
+        "max_work_items": 5,
+        "mutation_ratio": 0.1,
+        "max_mutations": 0
+    },
+    "stats": {
+        "steps": 83731,
+        "imported": 82232,
+        "import_max_step": 13729,
+        "import_min": 1.5044629999999999,
+        "import_max": 537.844061,
+        "import_mean": 8.623382233546666,
+        "import_p50": 15.5,
+        "import_p75": 27.04,
+        "import_p90": 111.058,
+        "import_p99": 143.393,
+        "import_std_dev": 18.09254736851842
+    },
+    "target": {
+        "info": {
+            "fuzz_version": 1,
+            "fuzz_features": 2,
+            "jam_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_version": {
+                "major": 0,
+                "minor": 2,
+                "patch": 6
+            },
+            "app_name": "Jamixir"
+        },
+        "stats": {
+            "steps": 83730,
+            "imported": 82231,
+            "import_max_step": 67473,
+            "import_min": 5.136425,
+            "import_max": 236.828789,
+            "import_mean": 41.56421105548961,
+            "import_p50": 95.115,
+            "import_p75": 111.28,
+            "import_p90": 127.123,
+            "import_p99": 159.262,
+            "import_std_dev": 25.928285213293993
+        }
+    },
+    "error": {
+        "communication": "IO error: Connection reset by peer (os error 104) (potential target crash)"
+    }
+}
