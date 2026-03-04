@@ -1,0 +1,12 @@
+usage: fuzz-workflow.py [-h] [-t TARGETS] [-p PROFILE]
+                        [--fuzzy-profile FUZZY_PROFILE] [-m MAX_MUTATIONS]
+                        [-r MUTATION_RATIO] [--skip-get] [--skip-run]
+                        [--skip-report] [-s REPORT_DEPTH] [--report-prune]
+                        [--report-publish] [-D] [--spec {tiny,full}]
+                        [--source {local,trace}] [--omit-log-tail]
+                        [--discard-logs] [--first-trace FIRST_TRACE]
+                        [--trace-count TRACE_COUNT]
+                        [--ignore-traces IGNORE_TRACES] [--parallel]
+                        [--rand-seed] [--list-targets]
+                        [--gp-version GP_VERSION]
+fuzz-workflow.py: error: argument -t/--targets: expected one argument

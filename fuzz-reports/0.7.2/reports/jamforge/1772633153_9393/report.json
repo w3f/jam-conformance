@@ -1,0 +1,62 @@
+{
+    "config": {
+        "seed": "1772633153_9393",
+        "max_steps": 100000,
+        "safrole": false,
+        "profile": {
+            "fuzzy": null
+        },
+        "fuzzy_profile": {
+            "rand": null
+        },
+        "max_work_items": 5,
+        "mutation_ratio": 0.1,
+        "max_mutations": 0
+    },
+    "stats": {
+        "steps": 36642,
+        "imported": 35901,
+        "import_max_step": 6451,
+        "import_min": 1.712122,
+        "import_max": 1473.094732,
+        "import_mean": 17.018044252053997,
+        "import_p50": 15.359,
+        "import_p75": 20.08,
+        "import_p90": 195.887,
+        "import_p99": 293.581,
+        "import_std_dev": 46.123453665007005
+    },
+    "target": {
+        "info": {
+            "fuzz_version": 1,
+            "fuzz_features": 2,
+            "jam_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_version": {
+                "major": 0,
+                "minor": 1,
+                "patch": 2
+            },
+            "app_name": "jam-forge"
+        },
+        "stats": {
+            "steps": 36641,
+            "imported": 35900,
+            "import_max_step": 36311,
+            "import_min": 8.922462000000001,
+            "import_max": 2741.250679,
+            "import_mean": 69.73537007367756,
+            "import_p50": 74.381,
+            "import_p75": 104.482,
+            "import_p90": 544.666,
+            "import_p99": 1235.248,
+            "import_std_dev": 157.08572863946742
+        }
+    },
+    "error": {
+        "communication": "IO error: early eof (potential target crash)"
+    }
+}

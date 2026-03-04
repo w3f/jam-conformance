@@ -1,0 +1,1521 @@
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.25s
+Setting JAM spec: tiny
+['jamforge']
+Skipping get
+
+==================================================
+Running fuzzer local workflow for jamforge
+==================================================
+
+* Running target: jamforge
+Starting target with command: /home/ubuntu/w3f-jam-conformance/scripts/target.py run jamforge --container-name jamforge-1772632944_5541
+Target output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_5541/logs/target_jamforge.log
+Target started with PID: 2600
+Target socket /tmp/jam_fuzz_1772632944_5541.sock is ready.
+Running cargo command: cargo run --release -p polkajam-fuzz -- --source local --max-steps 100000 --step-period 0 --safrole false --seed 1772632944_5541 --max-work-items 5 --single-step false --profile fuzzy --fuzzy-profile rand --trace-dir /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_5541/trace --target-sock /tmp/jam_fuzz_1772632944_5541.sock --mutation-ratio 0.1 --max-mutations 0 --verbosity 0 --pvm-interpreter-backend
+Fuzzer output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_5541/logs/fuzzer_jamforge.log
+Fuzzer completed with error code: 1
+Check /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_5541/logs/fuzzer_jamforge.log for detailed output.
+* Terminating target process with PID: 2600
+Target process terminated successfully
+-----------------------------------------------
+Generating report from traces...
+* Report dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_5541/report
+* Traces dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_5541/trace
+  - depth 2
+  - prune False
+-----------------------------------------------
+
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_5541/trace/00000140.bin
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_5541/trace/00000139.bin
+* Processing report.bin if it exists
+Creating report.json file in /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_5541/report
+Copying /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_5541/trace/report.bin to /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_5541/report
+* Publishing report
+* Publish report traces
+Skipping non-trace file report.bin
+Copying trace file 00000140.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_5541
+Copying trace file 00000139.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_5541
+Skipping non-trace file report.json
+Copying trace file 00000140.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_5541
+Copying trace file 00000139.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_5541
+Traces copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_5541
+* Publish report
+Copying report file report.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_5541
+Copying report file report.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_5541
+Reports copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_5541
+
+--------------------------------------------------
+fuzzer_jamforge.log tail
+--------------------------------------------------
+Dumping contents of log file: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_5541/logs/fuzzer_jamforge.log
+[s=137] fuzz::builder  Picking Fuzzy service for new work item. Service ID: dd17b2ce = 3709317838
+[s=137] fuzz::guarantees  Built 2 of 2 packages
+[s=137] fuzz::fuzzer  Importing: 2888cba5853c9c27... (author=3, slot=137, parent=0xd2a7a9247cb9ff38...)
+[s=137] fuzz::fuzzer  Imported 2888cba5853c9c27... 
+[s=137] fuzz::fuzzer  State root: 628157758136bddf...
+[s=137] fuzz::fuzzer  ======================= [STEP 00000138] =======================
+[s=138] fuzz::assurances  Submitting assurance for val=0, cores=[0]
+[s=138] fuzz::assurances  Submitting assurance for val=1, cores=[1]
+[s=138] fuzz::assurances  Submitting assurance for val=2, cores=[0]
+[s=138] fuzz::assurances  Submitting assurance for val=3, cores=[0, 1]
+[s=138] fuzz::assurances  Submitting assurance for val=4, cores=[0, 1]
+[s=138] fuzz::assurances  Submitting assurance for val=5, cores=[0]
+[s=138] fuzz::guarantees  Creating up to 2 packages
+[s=138] fuzz::guarantees  Building package with up to 1 items
+[s=138] fuzz::guarantees  Building package with up to 3 items
+[s=138] fuzz::builder  Picking Fuzzy service for new work item. Service ID: e63b0b54 = 3862629204
+[s=138] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 2b97f992 = 731380114
+[s=138] fuzz::guarantees  Built 2 of 2 packages
+[s=138] fuzz::fuzzer  Importing: f8e7b8501c717633... (author=0, slot=138, parent=0x2888cba5853c9c27...)
+[s=138] fuzz::fuzzer  Imported f8e7b8501c717633... 
+[s=138] fuzz::fuzzer  State root: 56ea7cf16eb184ff...
+[s=138] fuzz::fuzzer  ======================= [STEP 00000139] =======================
+[s=139] fuzz::preimages  Reaping 0x857b103cd9a9cd73...
+[s=139] fuzz::assurances  Submitting assurance for val=0, cores=[1]
+[s=139] fuzz::assurances  Submitting assurance for val=2, cores=[1]
+[s=139] fuzz::assurances  Submitting assurance for val=3, cores=[1]
+[s=139] fuzz::assurances  Submitting assurance for val=4, cores=[1]
+[s=139] fuzz::assurances  Submitting assurance for val=5, cores=[1]
+[s=139] fuzz::guarantees  Creating up to 1 packages
+[s=139] fuzz::guarantees  Building package with up to 3 items
+[s=139] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 2b97f992 = 731380114
+[s=139] fuzz::guarantees  Built 1 of 1 packages
+[s=139] fuzz::fuzzer  Importing: 4bfd4849d7e77839... (author=3, slot=139, parent=0xf8e7b8501c717633...)
+[s=139] fuzz::fuzzer  Imported 4bfd4849d7e77839... 
+[s=139] fuzz::fuzzer  State root: b36040da5128362b...
+[s=139] fuzz::fuzzer  ======================= [STEP 00000140] =======================
+[s=140] fuzz::preimages  Solicited preimage 0x72c87519b622738f... for 62deccce
+[s=140] fuzz::preimages  Submitting preimage for 0x72c87519b622738f... solicited by service 62deccce (sticky=true)
+[s=140] fuzz::assurances  Submitting assurance for val=0, cores=[1]
+[s=140] fuzz::assurances  Submitting assurance for val=1, cores=[1]
+[s=140] fuzz::assurances  Submitting assurance for val=2, cores=[1]
+[s=140] fuzz::guarantees  Creating up to 1 packages
+[s=140] fuzz::guarantees  Building package with up to 1 items
+[s=140] fuzz::guarantees  Built 1 of 1 packages
+[s=140] fuzz::fuzzer  Importing: 120911a23a9c0612... (author=5, slot=140, parent=0x4bfd4849d7e77839...)
+[s=140] fuzz::fuzzer  Imported 120911a23a9c0612... 
+[s=140] fuzz::fuzzer  State root: c7a14f96834b4262...
+[s=140] fuzz::fuzzer  Failed sending block to to target: IO error: Broken pipe (os error 32)
+[s=140] fuzz::fuzzer  Terminating after 140 steps with result: Err(RemoteCommunication(Io(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })))
+
+==================================================
+==================== REPORT ======================
+==================================================
+
+Configuration
+-------------
+seed = 1772632944_5541
+max_steps = 100000
+safrole = false
+profile = fuzzy
+fuzzy_profile = rand
+max_work_items = 5
+mutation_ratio = 0.10
+max_mutations = 0
+
+Local Statistics
+----------------
+steps = 140
+imported = 136
+import_min = 1.91 ms
+import_max = 528.92 ms
+import_max_step = 22
+import_mean = 27.12 ms
+import_p50 = 7.13 ms
+import_p75 = 10.96 ms
+import_p90 = 16.30 ms
+import_p99 = 458.18 ms
+import_std_dev = 87.66 ms
+
+Target Info
+-----------
+jam-forge-0.1.2_gp-0.7.2
+
+Target Statistics
+-----------------
+steps = 139
+imported = 135
+import_min = 13.92 ms
+import_max = 1771.57 ms
+import_max_step = 22
+import_mean = 124.73 ms
+import_p50 = 45.43 ms
+import_p75 = 88.06 ms
+import_p90 = 214.64 ms
+import_p99 = 1269.94 ms
+import_std_dev = 251.46 ms
+
+Communication failure: IO error: Broken pipe (os error 32) (potential target crash)
+
+Error: State mismatch
+--------------------------------------------------
+
+Setting JAM spec: tiny
+['jamforge']
+Skipping get
+
+==================================================
+Running fuzzer local workflow for jamforge
+==================================================
+
+* Running target: jamforge
+Starting target with command: /home/ubuntu/w3f-jam-conformance/scripts/target.py run jamforge --container-name jamforge-1772632944_3611
+Target output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3611/logs/target_jamforge.log
+Target started with PID: 2601
+Target socket /tmp/jam_fuzz_1772632944_3611.sock is ready.
+Running cargo command: cargo run --release -p polkajam-fuzz -- --source local --max-steps 100000 --step-period 0 --safrole false --seed 1772632944_3611 --max-work-items 5 --single-step false --profile fuzzy --fuzzy-profile rand --trace-dir /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3611/trace --target-sock /tmp/jam_fuzz_1772632944_3611.sock --mutation-ratio 0.1 --max-mutations 0 --verbosity 0 --pvm-interpreter-backend
+Fuzzer output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3611/logs/fuzzer_jamforge.log
+Fuzzer completed with error code: 1
+Check /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3611/logs/fuzzer_jamforge.log for detailed output.
+* Terminating target process with PID: 2601
+Target process terminated successfully
+-----------------------------------------------
+Generating report from traces...
+* Report dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3611/report
+* Traces dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3611/trace
+  - depth 2
+  - prune False
+-----------------------------------------------
+
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3611/trace/00000182.bin
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3611/trace/00000181.bin
+* Processing report.bin if it exists
+Creating report.json file in /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3611/report
+Copying /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3611/trace/report.bin to /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3611/report
+* Publishing report
+* Publish report traces
+Skipping non-trace file report.bin
+Copying trace file 00000182.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_3611
+Copying trace file 00000182.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_3611
+Copying trace file 00000181.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_3611
+Skipping non-trace file report.json
+Copying trace file 00000181.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_3611
+Traces copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_3611
+* Publish report
+Copying report file report.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_3611
+Copying report file report.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_3611
+Reports copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_3611
+
+--------------------------------------------------
+fuzzer_jamforge.log tail
+--------------------------------------------------
+Dumping contents of log file: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3611/logs/fuzzer_jamforge.log
+[s=180] fuzz::assurances  Submitting assurance for val=4, cores=[1]
+[s=180] fuzz::assurances  Submitting assurance for val=5, cores=[1]
+[s=180] fuzz::guarantees  Creating up to 1 packages
+[s=180] fuzz::guarantees  Building package with up to 1 items
+[s=180] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 25661127 = 627446055
+[s=180] fuzz::guarantees  Built 1 of 1 packages
+[s=180] fuzz::fuzzer  Importing: 5fcb350c3e78322d... (author=1, slot=180, parent=0x3f81adfd2f4a1f77...)
+[s=180] fuzz::fuzzer  Imported 5fcb350c3e78322d... 
+[s=180] fuzz::fuzzer  State root: 078d26f1264bddd2...
+[s=180] fuzz::fuzzer  ======================= [STEP 00000181] =======================
+[s=181] fuzz::preimages  Reaping 0x857b103cd9a9cd73...
+[s=181] fuzz::assurances  Submitting assurance for val=0, cores=[0]
+[s=181] fuzz::assurances  Submitting assurance for val=1, cores=[0, 1]
+[s=181] fuzz::assurances  Submitting assurance for val=2, cores=[0]
+[s=181] fuzz::assurances  Submitting assurance for val=3, cores=[0]
+[s=181] fuzz::assurances  Submitting assurance for val=4, cores=[0, 1]
+[s=181] fuzz::assurances  Submitting assurance for val=5, cores=[0, 1]
+[s=181] fuzz::guarantees  Creating up to 2 packages
+[s=181] fuzz::guarantees  Building package with up to 4 items
+[s=181] fuzz::builder  Picking Fuzzy service for new work item. Service ID: a569526c = 2775143020
+[s=181] fuzz::builder  Picking Fuzzy service for new work item. Service ID: f7074099 = 4144447641
+[s=181] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 25661151 = 627446097
+[s=181] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 25661151 = 627446097
+[s=181] fuzz::guarantees  Building package with up to 5 items
+[s=181] fuzz::builder  Picking Fuzzy service for new work item. Service ID: a569526c = 2775143020
+[s=181] fuzz::builder  Picking Fuzzy service for new work item. Service ID: f7074099 = 4144447641
+[s=181] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 0aa3d0cc = 178507980
+[s=181] fuzz::builder  Picking Fuzzy service for new work item. Service ID: f7074099 = 4144447641
+[s=181] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 1a71eaf5 = 443673333
+[s=181] fuzz::guarantees  Built 2 of 2 packages
+[s=181] fuzz::fuzzer  Importing: 11cae94932ce8fb0... (author=5, slot=181, parent=0x5fcb350c3e78322d...)
+[s=181] fuzz::fuzzer  Imported 11cae94932ce8fb0... 
+[s=181] fuzz::fuzzer  State root: def5ec312d39569f...
+[s=181] fuzz::fuzzer  ======================= [STEP 00000182] =======================
+[s=182] fuzz::assurances  Submitting assurance for val=0, cores=[0, 1]
+[s=182] fuzz::assurances  Submitting assurance for val=1, cores=[0]
+[s=182] fuzz::assurances  Submitting assurance for val=2, cores=[0, 1]
+[s=182] fuzz::assurances  Submitting assurance for val=3, cores=[0]
+[s=182] fuzz::assurances  Submitting assurance for val=4, cores=[1]
+[s=182] fuzz::assurances  Submitting assurance for val=5, cores=[0, 1]
+[s=182] fuzz::guarantees  Creating up to 1 packages
+[s=182] fuzz::guarantees  Building package with up to 4 items
+[s=182] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 1a71eaf5 = 443673333
+[s=182] fuzz::guarantees  Built 1 of 1 packages
+[s=182] fuzz::fuzzer  Importing: 3d92aee4362396f1... (author=2, slot=182, parent=0x11cae94932ce8fb0...)
+[s=182] fuzz::fuzzer  Imported 3d92aee4362396f1... 
+[s=182] fuzz::fuzzer  State root: 6ce601330730c2bb...
+[s=182] fuzz::fuzzer  Failed sending block to to target: IO error: Broken pipe (os error 32)
+[s=182] fuzz::fuzzer  Terminating after 182 steps with result: Err(RemoteCommunication(Io(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })))
+
+==================================================
+==================== REPORT ======================
+==================================================
+
+Configuration
+-------------
+seed = 1772632944_3611
+max_steps = 100000
+safrole = false
+profile = fuzzy
+fuzzy_profile = rand
+max_work_items = 5
+mutation_ratio = 0.10
+max_mutations = 0
+
+Local Statistics
+----------------
+steps = 182
+imported = 182
+import_min = 1.90 ms
+import_max = 690.94 ms
+import_max_step = 171
+import_mean = 11.37 ms
+import_p50 = 7.34 ms
+import_p75 = 9.44 ms
+import_p90 = 14.28 ms
+import_p99 = 20.78 ms
+import_std_dev = 50.84 ms
+
+Target Info
+-----------
+jam-forge-0.1.2_gp-0.7.2
+
+Target Statistics
+-----------------
+steps = 181
+imported = 181
+import_min = 13.05 ms
+import_max = 1932.09 ms
+import_max_step = 76
+import_mean = 78.96 ms
+import_p50 = 44.77 ms
+import_p75 = 68.72 ms
+import_p90 = 120.70 ms
+import_p99 = 756.90 ms
+import_std_dev = 176.96 ms
+
+Communication failure: IO error: Broken pipe (os error 32) (potential target crash)
+
+Error: State mismatch
+--------------------------------------------------
+
+Setting JAM spec: tiny
+['jamforge']
+Skipping get
+
+==================================================
+Running fuzzer local workflow for jamforge
+==================================================
+
+* Running target: jamforge
+Starting target with command: /home/ubuntu/w3f-jam-conformance/scripts/target.py run jamforge --container-name jamforge-1772632944_2611
+Target output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_2611/logs/target_jamforge.log
+Target started with PID: 2605
+Target socket /tmp/jam_fuzz_1772632944_2611.sock is ready.
+Running cargo command: cargo run --release -p polkajam-fuzz -- --source local --max-steps 100000 --step-period 0 --safrole false --seed 1772632944_2611 --max-work-items 5 --single-step false --profile fuzzy --fuzzy-profile rand --trace-dir /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_2611/trace --target-sock /tmp/jam_fuzz_1772632944_2611.sock --mutation-ratio 0.1 --max-mutations 0 --verbosity 0 --pvm-interpreter-backend
+Fuzzer output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_2611/logs/fuzzer_jamforge.log
+Fuzzer completed with error code: 1
+Check /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_2611/logs/fuzzer_jamforge.log for detailed output.
+* Terminating target process with PID: 2605
+Target process terminated successfully
+-----------------------------------------------
+Generating report from traces...
+* Report dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_2611/report
+* Traces dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_2611/trace
+  - depth 2
+  - prune False
+-----------------------------------------------
+
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_2611/trace/00000130.bin
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_2611/trace/00000129.bin
+* Processing report.bin if it exists
+Creating report.json file in /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_2611/report
+Copying /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_2611/trace/report.bin to /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_2611/report
+* Publishing report
+* Publish report traces
+Copying trace file 00000129.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_2611
+Skipping non-trace file report.bin
+Copying trace file 00000130.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_2611
+Skipping non-trace file report.json
+Copying trace file 00000129.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_2611
+Copying trace file 00000130.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_2611
+Traces copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_2611
+* Publish report
+Copying report file report.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_2611
+Copying report file report.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_2611
+Reports copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_2611
+
+--------------------------------------------------
+fuzzer_jamforge.log tail
+--------------------------------------------------
+Dumping contents of log file: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_2611/logs/fuzzer_jamforge.log
+[s=128] fuzz::assurances  Submitting assurance for val=4, cores=[0, 1]
+[s=128] fuzz::assurances  Submitting assurance for val=5, cores=[0, 1]
+[s=128] fuzz::guarantees  Creating up to 2 packages
+[s=128] fuzz::guarantees  Building package with up to 3 items
+[s=128] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 1cbb219e = 482025886
+[s=128] fuzz::builder  Picking Fuzzy service for new work item. Service ID: aab0fb44 = 2863725380
+[s=128] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 706b7c39 = 1886092345
+[s=128] fuzz::guarantees  Building package with up to 1 items
+[s=128] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 081cbc8f = 136101007
+[s=128] fuzz::guarantees  Built 2 of 2 packages
+[s=128] fuzz::fuzzer  Importing: fc4462aacd7e6680... (author=2, slot=128, parent=0xc3f13505be060100...)
+[s=128] fuzz::fuzzer  Imported fc4462aacd7e6680... 
+[s=128] fuzz::fuzzer  State root: ad769303e5b38b3a...
+[s=128] fuzz::fuzzer  ======================= [STEP 00000129] =======================
+[s=129] fuzz::preimages  Preimage for 0x857b103cd9a9cd73... is now provided for service 1998585954
+[s=129] fuzz::assurances  Submitting assurance for val=0, cores=[0, 1]
+[s=129] fuzz::assurances  Submitting assurance for val=1, cores=[0, 1]
+[s=129] fuzz::assurances  Submitting assurance for val=2, cores=[0, 1]
+[s=129] fuzz::assurances  Submitting assurance for val=3, cores=[0, 1]
+[s=129] fuzz::assurances  Submitting assurance for val=4, cores=[0, 1]
+[s=129] fuzz::assurances  Submitting assurance for val=5, cores=[0, 1]
+[s=129] fuzz::guarantees  Creating up to 1 packages
+[s=129] fuzz::guarantees  Building package with up to 4 items
+[s=129] fuzz::builder  Picking Fuzzy service for new work item. Service ID: aab0fb44 = 2863725380
+[s=129] fuzz::builder  Picking Fuzzy service for new work item. Service ID: eb4fb02d = 3947868205
+[s=129] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 77200062 = 1998585954
+[s=129] fuzz::guarantees  Built 1 of 1 packages
+[s=129] fuzz::fuzzer  Importing: 1bbddfa9806c7437... (author=3, slot=129, parent=0xfc4462aacd7e6680...)
+[s=129] fuzz::fuzzer  Imported 1bbddfa9806c7437... 
+[s=129] fuzz::fuzzer  State root: 3de92f294e294437...
+[s=129] fuzz::fuzzer  ======================= [STEP 00000130] =======================
+[s=130] fuzz::assurances  Submitting assurance for val=1, cores=[0]
+[s=130] fuzz::assurances  Submitting assurance for val=2, cores=[0, 1]
+[s=130] fuzz::assurances  Submitting assurance for val=3, cores=[0]
+[s=130] fuzz::assurances  Submitting assurance for val=4, cores=[0, 1]
+[s=130] fuzz::assurances  Submitting assurance for val=5, cores=[1]
+[s=130] fuzz::guarantees  Creating up to 2 packages
+[s=130] fuzz::guarantees  Building package with up to 4 items
+[s=130] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 100f46c1 = 269436609
+[s=130] fuzz::builder  Picking Fuzzy service for new work item. Service ID: eb4fb02d = 3947868205
+[s=130] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 081cbc8f = 136101007
+[s=130] fuzz::guarantees  Building package with up to 2 items
+[s=130] fuzz::builder  Picking Fuzzy service for new work item. Service ID: c44d7971 = 3293411697
+[s=130] fuzz::guarantees  Built 2 of 2 packages
+[s=130] fuzz::fuzzer  Importing: 07b9a70232f6ea82... (author=2, slot=130, parent=0x1bbddfa9806c7437...)
+[s=130] fuzz::fuzzer  Imported 07b9a70232f6ea82... 
+[s=130] fuzz::fuzzer  State root: 2ca03287401c97f9...
+[s=130] fuzz::fuzzer  Failed sending block to to target: IO error: Broken pipe (os error 32)
+[s=130] fuzz::fuzzer  Terminating after 130 steps with result: Err(RemoteCommunication(Io(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })))
+
+==================================================
+==================== REPORT ======================
+==================================================
+
+Configuration
+-------------
+seed = 1772632944_2611
+max_steps = 100000
+safrole = false
+profile = fuzzy
+fuzzy_profile = rand
+max_work_items = 5
+mutation_ratio = 0.10
+max_mutations = 0
+
+Local Statistics
+----------------
+steps = 130
+imported = 129
+import_min = 1.97 ms
+import_max = 491.59 ms
+import_max_step = 14
+import_mean = 26.30 ms
+import_p50 = 7.42 ms
+import_p75 = 11.81 ms
+import_p90 = 18.11 ms
+import_p99 = 472.89 ms
+import_std_dev = 80.17 ms
+
+Target Info
+-----------
+jam-forge-0.1.2_gp-0.7.2
+
+Target Statistics
+-----------------
+steps = 129
+imported = 128
+import_min = 16.14 ms
+import_max = 1968.87 ms
+import_max_step = 22
+import_mean = 124.75 ms
+import_p50 = 55.45 ms
+import_p75 = 94.13 ms
+import_p90 = 204.75 ms
+import_p99 = 1460.73 ms
+import_std_dev = 249.57 ms
+
+Communication failure: IO error: Broken pipe (os error 32) (potential target crash)
+
+Error: State mismatch
+--------------------------------------------------
+
+Setting JAM spec: tiny
+['jamforge']
+Skipping get
+
+==================================================
+Running fuzzer local workflow for jamforge
+==================================================
+
+* Running target: jamforge
+Starting target with command: /home/ubuntu/w3f-jam-conformance/scripts/target.py run jamforge --container-name jamforge-1772632944_7267
+Target output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_7267/logs/target_jamforge.log
+Target started with PID: 2602
+Target socket /tmp/jam_fuzz_1772632944_7267.sock is ready.
+Running cargo command: cargo run --release -p polkajam-fuzz -- --source local --max-steps 100000 --step-period 0 --safrole false --seed 1772632944_7267 --max-work-items 5 --single-step false --profile fuzzy --fuzzy-profile rand --trace-dir /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_7267/trace --target-sock /tmp/jam_fuzz_1772632944_7267.sock --mutation-ratio 0.1 --max-mutations 0 --verbosity 0 --pvm-interpreter-backend
+Fuzzer output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_7267/logs/fuzzer_jamforge.log
+Fuzzer completed with error code: 1
+Check /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_7267/logs/fuzzer_jamforge.log for detailed output.
+* Terminating target process with PID: 2602
+Target process terminated successfully
+-----------------------------------------------
+Generating report from traces...
+* Report dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_7267/report
+* Traces dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_7267/trace
+  - depth 2
+  - prune False
+-----------------------------------------------
+
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_7267/trace/00000128.bin
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_7267/trace/00000127.bin
+* Processing report.bin if it exists
+Creating report.json file in /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_7267/report
+Copying /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_7267/trace/report.bin to /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_7267/report
+* Publishing report
+* Publish report traces
+Copying trace file 00000127.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_7267
+Skipping non-trace file report.bin
+Copying trace file 00000128.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_7267
+Copying trace file 00000128.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_7267
+Skipping non-trace file report.json
+Copying trace file 00000127.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_7267
+Traces copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_7267
+* Publish report
+Copying report file report.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_7267
+Copying report file report.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_7267
+Reports copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_7267
+
+--------------------------------------------------
+fuzzer_jamforge.log tail
+--------------------------------------------------
+Dumping contents of log file: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_7267/logs/fuzzer_jamforge.log
+[s=126] fuzz::builder  Picking Fuzzy service for new work item. Service ID: e0dbe1c0 = 3772506560
+[s=126] fuzz::builder  Picking Fuzzy service for new work item. Service ID: e0dbe1c0 = 3772506560
+[s=126] fuzz::builder  Picking Fuzzy service for new work item. Service ID: d3c9b4d5 = 3553211605
+[s=126] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 3c472809 = 1011296265
+[s=126] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 994be001 = 2571886593
+[s=126] fuzz::guarantees  Building package with up to 2 items
+[s=126] fuzz::builder  Picking Fuzzy service for new work item. Service ID: accc61db = 2899075547
+[s=126] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 36dfde5b = 920641115
+[s=126] fuzz::guarantees  Built 2 of 2 packages
+[s=126] fuzz::fuzzer  Importing: 8eeb1681056c1bbc... (author=5, slot=126, parent=0xb0c3a164e56c524f...)
+[s=126] fuzz::fuzzer  Imported 8eeb1681056c1bbc... 
+[s=126] fuzz::fuzzer  State root: 0e79861746907b53...
+[s=126] fuzz::fuzzer  ======================= [STEP 00000127] =======================
+[s=127] fuzz::preimages  Reaping 0x857b103cd9a9cd73...
+[s=127] fuzz::preimages  Solicited preimage 0x8ca57675b5b50746... for 994be001
+[s=127] fuzz::assurances  Submitting assurance for val=0, cores=[1]
+[s=127] fuzz::assurances  Submitting assurance for val=1, cores=[1]
+[s=127] fuzz::assurances  Submitting assurance for val=2, cores=[1]
+[s=127] fuzz::assurances  Submitting assurance for val=3, cores=[1]
+[s=127] fuzz::assurances  Submitting assurance for val=4, cores=[1]
+[s=127] fuzz::assurances  Submitting assurance for val=5, cores=[1]
+[s=127] fuzz::guarantees  Creating up to 1 packages
+[s=127] fuzz::guarantees  Building package with up to 1 items
+[s=127] fuzz::builder  Picking Fuzzy service for new work item. Service ID: accc61db = 2899075547
+[s=127] fuzz::guarantees  Built 1 of 1 packages
+[s=127] fuzz::fuzzer  Importing: f39c5701f4c3c40e... (author=1, slot=127, parent=0x8eeb1681056c1bbc...)
+[s=127] fuzz::fuzzer  Imported f39c5701f4c3c40e... 
+[s=127] fuzz::fuzzer  State root: 2ac958ac7a072d75...
+[s=127] fuzz::fuzzer  ======================= [STEP 00000128] =======================
+[s=128] fuzz::preimages  Submitting preimage for 0x8ca57675b5b50746... solicited by service 994be001 (sticky=true)
+[s=128] fuzz::assurances  Submitting assurance for val=0, cores=[0, 1]
+[s=128] fuzz::assurances  Submitting assurance for val=1, cores=[0, 1]
+[s=128] fuzz::assurances  Submitting assurance for val=2, cores=[1]
+[s=128] fuzz::assurances  Submitting assurance for val=3, cores=[1]
+[s=128] fuzz::assurances  Submitting assurance for val=4, cores=[1]
+[s=128] fuzz::assurances  Submitting assurance for val=5, cores=[0, 1]
+[s=128] fuzz::guarantees  Creating up to 1 packages
+[s=128] fuzz::guarantees  Building package with up to 5 items
+[s=128] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 994be001 = 2571886593
+[s=128] fuzz::builder  Picking Fuzzy service for new work item. Service ID: da3f8cc9 = 3661597897
+[s=128] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 36dfde5b = 920641115
+[s=128] fuzz::builder  Picking Fuzzy service for new work item. Service ID: accc61db = 2899075547
+[s=128] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 46ff87a8 = 1191151528
+[s=128] fuzz::guarantees  Built 1 of 1 packages
+[s=128] fuzz::fuzzer  Importing: 8a35f86520a98ad0... (author=0, slot=128, parent=0xf39c5701f4c3c40e...)
+[s=128] fuzz::fuzzer  Imported 8a35f86520a98ad0... 
+[s=128] fuzz::fuzzer  State root: 9bd27506777d07d8...
+[s=128] fuzz::fuzzer  Failed sending block to to target: IO error: Broken pipe (os error 32)
+[s=128] fuzz::fuzzer  Terminating after 128 steps with result: Err(RemoteCommunication(Io(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })))
+
+==================================================
+==================== REPORT ======================
+==================================================
+
+Configuration
+-------------
+seed = 1772632944_7267
+max_steps = 100000
+safrole = false
+profile = fuzzy
+fuzzy_profile = rand
+max_work_items = 5
+mutation_ratio = 0.10
+max_mutations = 0
+
+Local Statistics
+----------------
+steps = 128
+imported = 127
+import_min = 1.95 ms
+import_max = 497.37 ms
+import_max_step = 16
+import_mean = 32.86 ms
+import_p50 = 6.75 ms
+import_p75 = 11.40 ms
+import_p90 = 18.05 ms
+import_p99 = 487.22 ms
+import_std_dev = 101.07 ms
+
+Target Info
+-----------
+jam-forge-0.1.2_gp-0.7.2
+
+Target Statistics
+-----------------
+steps = 127
+imported = 126
+import_min = 15.24 ms
+import_max = 1988.77 ms
+import_max_step = 37
+import_mean = 125.68 ms
+import_p50 = 46.28 ms
+import_p75 = 89.86 ms
+import_p90 = 313.19 ms
+import_p99 = 1253.92 ms
+import_std_dev = 252.29 ms
+
+Communication failure: IO error: Broken pipe (os error 32) (potential target crash)
+
+Error: State mismatch
+--------------------------------------------------
+
+Setting JAM spec: tiny
+['jamforge']
+Skipping get
+
+==================================================
+Running fuzzer local workflow for jamforge
+==================================================
+
+* Running target: jamforge
+Starting target with command: /home/ubuntu/w3f-jam-conformance/scripts/target.py run jamforge --container-name jamforge-1772632944_6696
+Target output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_6696/logs/target_jamforge.log
+Target started with PID: 2604
+Target socket /tmp/jam_fuzz_1772632944_6696.sock is ready.
+Running cargo command: cargo run --release -p polkajam-fuzz -- --source local --max-steps 100000 --step-period 0 --safrole false --seed 1772632944_6696 --max-work-items 5 --single-step false --profile fuzzy --fuzzy-profile rand --trace-dir /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_6696/trace --target-sock /tmp/jam_fuzz_1772632944_6696.sock --mutation-ratio 0.1 --max-mutations 0 --verbosity 0 --pvm-interpreter-backend
+Fuzzer output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_6696/logs/fuzzer_jamforge.log
+Fuzzer completed with error code: 1
+Check /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_6696/logs/fuzzer_jamforge.log for detailed output.
+* Terminating target process with PID: 2604
+Target process terminated successfully
+-----------------------------------------------
+Generating report from traces...
+* Report dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_6696/report
+* Traces dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_6696/trace
+  - depth 2
+  - prune False
+-----------------------------------------------
+
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_6696/trace/00000163.bin
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_6696/trace/00000162.bin
+* Processing report.bin if it exists
+Creating report.json file in /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_6696/report
+Copying /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_6696/trace/report.bin to /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_6696/report
+* Publishing report
+* Publish report traces
+Copying trace file 00000163.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_6696
+Skipping non-trace file report.bin
+Copying trace file 00000162.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_6696
+Copying trace file 00000162.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_6696
+Copying trace file 00000163.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_6696
+Skipping non-trace file report.json
+Traces copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_6696
+* Publish report
+Copying report file report.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_6696
+Copying report file report.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_6696
+Reports copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_6696
+
+--------------------------------------------------
+fuzzer_jamforge.log tail
+--------------------------------------------------
+Dumping contents of log file: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_6696/logs/fuzzer_jamforge.log
+[s=160] fuzz::assurances  Submitting assurance for val=3, cores=[0]
+[s=160] fuzz::assurances  Submitting assurance for val=4, cores=[0]
+[s=160] fuzz::assurances  Submitting assurance for val=5, cores=[0]
+[s=160] fuzz::guarantees  Creating up to 1 packages
+[s=160] fuzz::guarantees  Building package with up to 1 items
+[s=160] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 54dd6ee9 = 1423797993
+[s=160] fuzz::guarantees  Built 1 of 1 packages
+[s=160] fuzz::fuzzer  Importing: 38e124dfdab5df01... (author=4, slot=160, parent=0xe8f0ff9340e37aea...)
+[s=160] fuzz::fuzzer  Imported 38e124dfdab5df01... 
+[s=160] fuzz::fuzzer  State root: 730b163657da146c...
+[s=160] fuzz::fuzzer  ======================= [STEP 00000161] =======================
+[s=161] fuzz::preimages  Preimage for 0xbfda076fc4a30bd1... is now provided for service 4152361299
+[s=161] fuzz::preimages  Preimage for 0x857b103cd9a9cd73... is now provided for service 1692466938
+[s=161] fuzz::assurances  Submitting assurance for val=0, cores=[0]
+[s=161] fuzz::assurances  Submitting assurance for val=1, cores=[1]
+[s=161] fuzz::assurances  Submitting assurance for val=2, cores=[0, 1]
+[s=161] fuzz::assurances  Submitting assurance for val=3, cores=[1]
+[s=161] fuzz::assurances  Submitting assurance for val=4, cores=[0, 1]
+[s=161] fuzz::assurances  Submitting assurance for val=5, cores=[0]
+[s=161] fuzz::guarantees  Creating up to 1 packages
+[s=161] fuzz::guarantees  Building package with up to 2 items
+[s=161] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 0550abf3 = 89172979
+[s=161] fuzz::builder  Picking Fuzzy service for new work item. Service ID: daf8639b = 3673711515
+[s=161] fuzz::guarantees  Built 1 of 1 packages
+[s=161] fuzz::fuzzer  Importing: 8297e329d28b3a05... (author=2, slot=161, parent=0x38e124dfdab5df01...)
+[s=161] fuzz::fuzzer  Imported 8297e329d28b3a05... 
+[s=161] fuzz::fuzzer  State root: 2833b38c079b4dc2...
+[s=161] fuzz::fuzzer  ======================= [STEP 00000162] =======================
+[s=162] fuzz::assurances  Submitting assurance for val=0, cores=[0]
+[s=162] fuzz::assurances  Submitting assurance for val=1, cores=[0, 1]
+[s=162] fuzz::assurances  Submitting assurance for val=2, cores=[0]
+[s=162] fuzz::assurances  Submitting assurance for val=3, cores=[0]
+[s=162] fuzz::assurances  Submitting assurance for val=4, cores=[0, 1]
+[s=162] fuzz::assurances  Submitting assurance for val=5, cores=[0, 1]
+[s=162] fuzz::fuzzer  Importing: 6703b50bddf804cc... (author=4, slot=162, parent=0x8297e329d28b3a05...)
+[s=162] fuzz::fuzzer  Imported 6703b50bddf804cc... 
+[s=162] fuzz::fuzzer  State root: a84c181bb4b8e940...
+[s=162] fuzz::fuzzer  ======================= [STEP 00000163] =======================
+[s=163] fuzz::assurances  Submitting assurance for val=0, cores=[0, 1]
+[s=163] fuzz::assurances  Submitting assurance for val=1, cores=[0, 1]
+[s=163] fuzz::assurances  Submitting assurance for val=2, cores=[0]
+[s=163] fuzz::assurances  Submitting assurance for val=3, cores=[0, 1]
+[s=163] fuzz::assurances  Submitting assurance for val=4, cores=[0, 1]
+[s=163] fuzz::assurances  Submitting assurance for val=5, cores=[0, 1]
+[s=163] fuzz::fuzzer  Importing: bb375849e168b9d9... (author=1, slot=163, parent=0x6703b50bddf804cc...)
+[s=163] fuzz::fuzzer  Imported bb375849e168b9d9... 
+[s=163] fuzz::fuzzer  State root: 1c5d20160fa14dc3...
+[s=163] fuzz::fuzzer  Failed sending block to to target: IO error: Broken pipe (os error 32)
+[s=163] fuzz::fuzzer  Terminating after 163 steps with result: Err(RemoteCommunication(Io(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })))
+
+==================================================
+==================== REPORT ======================
+==================================================
+
+Configuration
+-------------
+seed = 1772632944_6696
+max_steps = 100000
+safrole = false
+profile = fuzzy
+fuzzy_profile = rand
+max_work_items = 5
+mutation_ratio = 0.10
+max_mutations = 0
+
+Local Statistics
+----------------
+steps = 163
+imported = 160
+import_min = 1.91 ms
+import_max = 509.74 ms
+import_max_step = 23
+import_mean = 28.09 ms
+import_p50 = 7.08 ms
+import_p75 = 11.13 ms
+import_p90 = 21.64 ms
+import_p99 = 459.18 ms
+import_std_dev = 93.91 ms
+
+Target Info
+-----------
+jam-forge-0.1.2_gp-0.7.2
+
+Target Statistics
+-----------------
+steps = 162
+imported = 159
+import_min = 15.07 ms
+import_max = 1173.46 ms
+import_max_step = 52
+import_mean = 98.01 ms
+import_p50 = 49.32 ms
+import_p75 = 92.70 ms
+import_p90 = 172.78 ms
+import_p99 = 1055.21 ms
+import_std_dev = 171.57 ms
+
+Communication failure: IO error: Broken pipe (os error 32) (potential target crash)
+
+Error: State mismatch
+--------------------------------------------------
+
+Setting JAM spec: tiny
+['jamforge']
+Skipping get
+
+==================================================
+Running fuzzer local workflow for jamforge
+==================================================
+
+* Running target: jamforge
+Starting target with command: /home/ubuntu/w3f-jam-conformance/scripts/target.py run jamforge --container-name jamforge-1772632944_9522
+Target output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_9522/logs/target_jamforge.log
+Target started with PID: 2596
+Target socket /tmp/jam_fuzz_1772632944_9522.sock is ready.
+Running cargo command: cargo run --release -p polkajam-fuzz -- --source local --max-steps 100000 --step-period 0 --safrole false --seed 1772632944_9522 --max-work-items 5 --single-step false --profile fuzzy --fuzzy-profile rand --trace-dir /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_9522/trace --target-sock /tmp/jam_fuzz_1772632944_9522.sock --mutation-ratio 0.1 --max-mutations 0 --verbosity 0 --pvm-interpreter-backend
+Fuzzer output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_9522/logs/fuzzer_jamforge.log
+Fuzzer completed with error code: 1
+Check /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_9522/logs/fuzzer_jamforge.log for detailed output.
+* Terminating target process with PID: 2596
+Target process terminated successfully
+-----------------------------------------------
+Generating report from traces...
+* Report dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_9522/report
+* Traces dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_9522/trace
+  - depth 2
+  - prune False
+-----------------------------------------------
+
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_9522/trace/00000118.bin
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_9522/trace/00000117.bin
+* Processing report.bin if it exists
+Creating report.json file in /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_9522/report
+Copying /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_9522/trace/report.bin to /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_9522/report
+* Publishing report
+* Publish report traces
+Skipping non-trace file report.bin
+Copying trace file 00000117.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_9522
+Copying trace file 00000118.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_9522
+Copying trace file 00000117.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_9522
+Skipping non-trace file report.json
+Copying trace file 00000118.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_9522
+Traces copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_9522
+* Publish report
+Copying report file report.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_9522
+Copying report file report.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_9522
+Reports copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_9522
+
+--------------------------------------------------
+fuzzer_jamforge.log tail
+--------------------------------------------------
+Dumping contents of log file: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_9522/logs/fuzzer_jamforge.log
+[s=116] fuzz::assurances  Submitting assurance for val=2, cores=[0]
+[s=116] fuzz::assurances  Submitting assurance for val=3, cores=[0]
+[s=116] fuzz::assurances  Submitting assurance for val=4, cores=[0]
+[s=116] fuzz::guarantees  Creating up to 1 packages
+[s=116] fuzz::guarantees  Building package with up to 1 items
+[s=116] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 56c89377 = 1455985527
+[s=116] fuzz::guarantees  Built 1 of 1 packages
+[s=116] fuzz::fuzzer  Importing: dc5b3a4effe26d33... (author=2, slot=116, parent=0x5bf8dc3f353acb04...)
+[s=116] fuzz::fuzzer  Imported dc5b3a4effe26d33... 
+[s=116] fuzz::fuzzer  State root: 49220f0b7a6eb428...
+[s=116] fuzz::fuzzer  ======================= [STEP 00000117] =======================
+[s=117] fuzz::assurances  Submitting assurance for val=0, cores=[0]
+[s=117] fuzz::assurances  Submitting assurance for val=2, cores=[0]
+[s=117] fuzz::assurances  Submitting assurance for val=3, cores=[0]
+[s=117] fuzz::assurances  Submitting assurance for val=4, cores=[0]
+[s=117] fuzz::assurances  Submitting assurance for val=5, cores=[0]
+[s=117] fuzz::guarantees  Creating up to 1 packages
+[s=117] fuzz::guarantees  Building package with up to 1 items
+[s=117] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 2dd659cd = 769022413
+[s=117] fuzz::guarantees  Built 1 of 1 packages
+[s=117] fuzz::fuzzer  Importing: ee868d5ab041bf5a... (author=1, slot=117, parent=0xdc5b3a4effe26d33...)
+[s=117] fuzz::fuzzer  Imported ee868d5ab041bf5a... 
+[s=117] fuzz::fuzzer  State root: 00bcc5913f491ae2...
+[s=117] fuzz::fuzzer  ======================= [STEP 00000118] =======================
+[s=118] fuzz::assurances  Submitting assurance for val=0, cores=[0, 1]
+[s=118] fuzz::assurances  Submitting assurance for val=1, cores=[0, 1]
+[s=118] fuzz::assurances  Submitting assurance for val=2, cores=[0, 1]
+[s=118] fuzz::assurances  Submitting assurance for val=3, cores=[0, 1]
+[s=118] fuzz::assurances  Submitting assurance for val=4, cores=[0, 1]
+[s=118] fuzz::assurances  Submitting assurance for val=5, cores=[0, 1]
+[s=118] fuzz::guarantees  Creating up to 3 packages
+[s=118] fuzz::guarantees  Building package with up to 2 items
+[s=118] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 56c89377 = 1455985527
+[s=118] fuzz::guarantees  Building package with up to 5 items
+[s=118] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 0dad89a5 = 229476773
+[s=118] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 56c89377 = 1455985527
+[s=118] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 56c8934d = 1455985485
+[s=118] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 2dd659cd = 769022413
+[s=118] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 2dd659cd = 769022413
+[s=118] fuzz::guarantees  Building package with up to 3 items
+[s=118] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 2dd659cd = 769022413
+[s=118] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 56c8934d = 1455985485
+[s=118] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 56c893cb = 1455985611
+[s=118] fuzz::guarantees  Built 3 of 3 packages
+[s=118] fuzz::fuzzer  Importing: 9e17e020052a12a5... (author=4, slot=118, parent=0xee868d5ab041bf5a...)
+[s=118] fuzz::fuzzer  Imported 9e17e020052a12a5... 
+[s=118] fuzz::fuzzer  State root: a0dc0612235f8fe0...
+[s=118] fuzz::fuzzer  Failed sending block to to target: IO error: early eof
+[s=118] fuzz::fuzzer  Terminating after 118 steps with result: Err(RemoteCommunication(Io(Custom { kind: UnexpectedEof, error: "early eof" })))
+
+==================================================
+==================== REPORT ======================
+==================================================
+
+Configuration
+-------------
+seed = 1772632944_9522
+max_steps = 100000
+safrole = false
+profile = fuzzy
+fuzzy_profile = rand
+max_work_items = 5
+mutation_ratio = 0.10
+max_mutations = 0
+
+Local Statistics
+----------------
+steps = 118
+imported = 118
+import_min = 1.97 ms
+import_max = 536.72 ms
+import_max_step = 30
+import_mean = 15.66 ms
+import_p50 = 6.88 ms
+import_p75 = 9.47 ms
+import_p90 = 13.67 ms
+import_p99 = 472.80 ms
+import_std_dev = 64.86 ms
+
+Target Info
+-----------
+jam-forge-0.1.2_gp-0.7.2
+
+Target Statistics
+-----------------
+steps = 117
+imported = 117
+import_min = 18.07 ms
+import_max = 3071.41 ms
+import_max_step = 30
+import_mean = 113.77 ms
+import_p50 = 50.77 ms
+import_p75 = 78.55 ms
+import_p90 = 225.37 ms
+import_p99 = 731.43 ms
+import_std_dev = 299.20 ms
+
+Communication failure: IO error: early eof (potential target crash)
+
+Error: State mismatch
+--------------------------------------------------
+
+Setting JAM spec: tiny
+['jamforge']
+Skipping get
+
+==================================================
+Running fuzzer local workflow for jamforge
+==================================================
+
+* Running target: jamforge
+Starting target with command: /home/ubuntu/w3f-jam-conformance/scripts/target.py run jamforge --container-name jamforge-1772632944_3601
+Target output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3601/logs/target_jamforge.log
+Target started with PID: 2597
+Target socket /tmp/jam_fuzz_1772632944_3601.sock is ready.
+Running cargo command: cargo run --release -p polkajam-fuzz -- --source local --max-steps 100000 --step-period 0 --safrole false --seed 1772632944_3601 --max-work-items 5 --single-step false --profile fuzzy --fuzzy-profile rand --trace-dir /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3601/trace --target-sock /tmp/jam_fuzz_1772632944_3601.sock --mutation-ratio 0.1 --max-mutations 0 --verbosity 0 --pvm-interpreter-backend
+Fuzzer output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3601/logs/fuzzer_jamforge.log
+Fuzzer completed with error code: 1
+Check /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3601/logs/fuzzer_jamforge.log for detailed output.
+* Terminating target process with PID: 2597
+Target process terminated successfully
+-----------------------------------------------
+Generating report from traces...
+* Report dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3601/report
+* Traces dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3601/trace
+  - depth 2
+  - prune False
+-----------------------------------------------
+
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3601/trace/00000133.bin
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3601/trace/00000132.bin
+* Processing report.bin if it exists
+Creating report.json file in /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3601/report
+Copying /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3601/trace/report.bin to /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3601/report
+* Publishing report
+* Publish report traces
+Copying trace file 00000132.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_3601
+Skipping non-trace file report.bin
+Copying trace file 00000133.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_3601
+Skipping non-trace file report.json
+Copying trace file 00000132.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_3601
+Copying trace file 00000133.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_3601
+Traces copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_3601
+* Publish report
+Copying report file report.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_3601
+Copying report file report.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_3601
+Reports copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_3601
+
+--------------------------------------------------
+fuzzer_jamforge.log tail
+--------------------------------------------------
+Dumping contents of log file: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_3601/logs/fuzzer_jamforge.log
+[s=129] fuzz::builder  Picking Fuzzy service for new work item. Service ID: c67a41d1 = 3329901009
+[s=129] fuzz::guarantees  Building package with up to 3 items
+[s=129] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 2f655871 = 795170929
+[s=129] fuzz::builder  Picking Fuzzy service for new work item. Service ID: c67a41fb = 3329901051
+[s=129] fuzz::builder  Picking Fuzzy service for new work item. Service ID: c67a41d1 = 3329901009
+[s=129] fuzz::guarantees  Built 2 of 2 packages
+[s=129] fuzz::fuzzer  Importing: 6b2ba00e9fea7c1c... (author=2, slot=129, parent=0x17b7e73410750e7c...)
+[s=129] fuzz::fuzzer  Imported 6b2ba00e9fea7c1c... 
+[s=129] fuzz::fuzzer  State root: 6a71704be591719e...
+[s=129] fuzz::fuzzer  ======================= [STEP 00000130] =======================
+[s=130] fuzz::assurances  Submitting assurance for val=2, cores=[0]
+[s=130] fuzz::assurances  Submitting assurance for val=3, cores=[0]
+[s=130] fuzz::assurances  Submitting assurance for val=4, cores=[0]
+[s=130] fuzz::assurances  Submitting assurance for val=5, cores=[0]
+[s=130] fuzz::guarantees  Creating up to 1 packages
+[s=130] fuzz::guarantees  Building package with up to 3 items
+[s=130] fuzz::builder  Picking Fuzzy service for new work item. Service ID: c67a41d1 = 3329901009
+[s=130] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 01587347 = 22573895
+[s=130] fuzz::guarantees  Built 1 of 1 packages
+[s=130] fuzz::fuzzer  Importing: 381c86bd1308659f... (author=3, slot=130, parent=0x6b2ba00e9fea7c1c...)
+[s=130] fuzz::fuzzer  Imported 381c86bd1308659f... 
+[s=130] fuzz::fuzzer  State root: f85081d5eb586c1c...
+[s=130] fuzz::fuzzer  ======================= [STEP 00000131] =======================
+[s=131] fuzz::assurances  Submitting assurance for val=1, cores=[0]
+[s=131] fuzz::assurances  Submitting assurance for val=3, cores=[0]
+[s=131] fuzz::assurances  Submitting assurance for val=4, cores=[0]
+[s=131] fuzz::fuzzer  Importing: b645a3723c9e3afa... (author=3, slot=131, parent=0x381c86bd1308659f...)
+[s=131] fuzz::fuzzer  Imported b645a3723c9e3afa... 
+[s=131] fuzz::fuzzer  State root: 1852773e783af02f...
+[s=131] fuzz::fuzzer  ======================= [STEP 00000132] =======================
+[s=132] fuzz::assurances  Submitting assurance for val=0, cores=[0, 1]
+[s=132] fuzz::assurances  Submitting assurance for val=1, cores=[1]
+[s=132] fuzz::assurances  Submitting assurance for val=2, cores=[1]
+[s=132] fuzz::assurances  Submitting assurance for val=4, cores=[0]
+[s=132] fuzz::assurances  Submitting assurance for val=5, cores=[0]
+[s=132] fuzz::fuzzer  Importing: 9ed241a4b0e4dd48... (author=0, slot=132, parent=0xb645a3723c9e3afa...)
+[s=132] fuzz::fuzzer  Imported 9ed241a4b0e4dd48... 
+[s=132] fuzz::fuzzer  State root: 6eb43ea045e59e3f...
+[s=132] fuzz::fuzzer  ======================= [STEP 00000133] =======================
+[s=133] fuzz::assurances  Submitting assurance for val=1, cores=[1]
+[s=133] fuzz::assurances  Submitting assurance for val=2, cores=[0, 1]
+[s=133] fuzz::assurances  Submitting assurance for val=3, cores=[0, 1]
+[s=133] fuzz::assurances  Submitting assurance for val=4, cores=[1]
+[s=133] fuzz::assurances  Submitting assurance for val=5, cores=[0, 1]
+[s=133] fuzz::fuzzer  Importing: ebde405cf20406ce... (author=1, slot=133, parent=0x9ed241a4b0e4dd48...)
+[s=133] fuzz::fuzzer  Imported ebde405cf20406ce... 
+[s=133] fuzz::fuzzer  State root: e87b331b61fad028...
+[s=133] fuzz::fuzzer  Failed sending block to to target: IO error: early eof
+[s=133] fuzz::fuzzer  Terminating after 133 steps with result: Err(RemoteCommunication(Io(Custom { kind: UnexpectedEof, error: "early eof" })))
+
+==================================================
+==================== REPORT ======================
+==================================================
+
+Configuration
+-------------
+seed = 1772632944_3601
+max_steps = 100000
+safrole = false
+profile = fuzzy
+fuzzy_profile = rand
+max_work_items = 5
+mutation_ratio = 0.10
+max_mutations = 0
+
+Local Statistics
+----------------
+steps = 133
+imported = 127
+import_min = 1.91 ms
+import_max = 447.60 ms
+import_max_step = 118
+import_mean = 24.92 ms
+import_p50 = 7.40 ms
+import_p75 = 11.13 ms
+import_p90 = 17.49 ms
+import_p99 = 447.16 ms
+import_std_dev = 84.84 ms
+
+Target Info
+-----------
+jam-forge-0.1.2_gp-0.7.2
+
+Target Statistics
+-----------------
+steps = 132
+imported = 126
+import_min = 14.42 ms
+import_max = 2157.28 ms
+import_max_step = 10
+import_mean = 128.57 ms
+import_p50 = 54.08 ms
+import_p75 = 90.84 ms
+import_p90 = 198.67 ms
+import_p99 = 1235.83 ms
+import_std_dev = 278.13 ms
+
+Communication failure: IO error: early eof (potential target crash)
+
+Error: State mismatch
+--------------------------------------------------
+
+Setting JAM spec: tiny
+['jamforge']
+Skipping get
+
+==================================================
+Running fuzzer local workflow for jamforge
+==================================================
+
+* Running target: jamforge
+Starting target with command: /home/ubuntu/w3f-jam-conformance/scripts/target.py run jamforge --container-name jamforge-1772632944_4444
+Target output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_4444/logs/target_jamforge.log
+Target started with PID: 2599
+Target socket /tmp/jam_fuzz_1772632944_4444.sock is ready.
+Running cargo command: cargo run --release -p polkajam-fuzz -- --source local --max-steps 100000 --step-period 0 --safrole false --seed 1772632944_4444 --max-work-items 5 --single-step false --profile fuzzy --fuzzy-profile rand --trace-dir /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_4444/trace --target-sock /tmp/jam_fuzz_1772632944_4444.sock --mutation-ratio 0.1 --max-mutations 0 --verbosity 0 --pvm-interpreter-backend
+Fuzzer output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_4444/logs/fuzzer_jamforge.log
+Fuzzer completed with error code: 1
+Check /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_4444/logs/fuzzer_jamforge.log for detailed output.
+* Terminating target process with PID: 2599
+Target process terminated successfully
+-----------------------------------------------
+Generating report from traces...
+* Report dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_4444/report
+* Traces dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_4444/trace
+  - depth 2
+  - prune False
+-----------------------------------------------
+
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_4444/trace/00000136.bin
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_4444/trace/00000135.bin
+* Processing report.bin if it exists
+Creating report.json file in /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_4444/report
+Copying /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_4444/trace/report.bin to /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_4444/report
+* Publishing report
+* Publish report traces
+Copying trace file 00000135.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_4444
+Copying trace file 00000136.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_4444
+Skipping non-trace file report.bin
+Copying trace file 00000136.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_4444
+Skipping non-trace file report.json
+Copying trace file 00000135.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_4444
+Traces copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_4444
+* Publish report
+Copying report file report.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_4444
+Copying report file report.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_4444
+Reports copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_4444
+
+--------------------------------------------------
+fuzzer_jamforge.log tail
+--------------------------------------------------
+Dumping contents of log file: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_4444/logs/fuzzer_jamforge.log
+[s=133] fuzz::fuzzer  Importing: a0da5f20febf0461... (author=3, slot=133, parent=0xf5a0541d41e0b577...)
+[s=133] fuzz::fuzzer  Imported a0da5f20febf0461... 
+[s=133] fuzz::fuzzer  State root: 78df30e220085824...
+[s=133] fuzz::fuzzer  ======================= [STEP 00000134] =======================
+[s=134] fuzz::assurances  Submitting assurance for val=0, cores=[1]
+[s=134] fuzz::assurances  Submitting assurance for val=1, cores=[0]
+[s=134] fuzz::assurances  Submitting assurance for val=2, cores=[0, 1]
+[s=134] fuzz::assurances  Submitting assurance for val=3, cores=[0, 1]
+[s=134] fuzz::assurances  Submitting assurance for val=4, cores=[0, 1]
+[s=134] fuzz::assurances  Submitting assurance for val=5, cores=[0, 1]
+[s=134] fuzz::fuzzer  Importing: 84fb62a7cacf007a... (author=1, slot=134, parent=0xa0da5f20febf0461...)
+[s=134] fuzz::fuzzer  Imported 84fb62a7cacf007a... 
+[s=134] fuzz::fuzzer  State root: e2a526de6a34f021...
+[s=134] fuzz::fuzzer  ======================= [STEP 00000135] =======================
+[s=135] fuzz::assurances  Submitting assurance for val=0, cores=[0, 1]
+[s=135] fuzz::assurances  Submitting assurance for val=1, cores=[0, 1]
+[s=135] fuzz::assurances  Submitting assurance for val=2, cores=[0, 1]
+[s=135] fuzz::assurances  Submitting assurance for val=3, cores=[0, 1]
+[s=135] fuzz::assurances  Submitting assurance for val=4, cores=[0, 1]
+[s=135] fuzz::assurances  Submitting assurance for val=5, cores=[0, 1]
+[s=135] fuzz::guarantees  Creating up to 1 packages
+[s=135] fuzz::guarantees  Building package with up to 2 items
+[s=135] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 856d2dab = 2238524843
+[s=135] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 856d2dab = 2238524843
+[s=135] fuzz::guarantees  Built 1 of 1 packages
+[s=135] fuzz::fuzzer  Importing: b173053aafb1c30c... (author=3, slot=135, parent=0x84fb62a7cacf007a...)
+[s=135] fuzz::fuzzer  Imported b173053aafb1c30c... 
+[s=135] fuzz::fuzzer  State root: 00096ee58b4e6508...
+[s=135] fuzz::fuzzer  ======================= [STEP 00000136] =======================
+[s=136] fuzz::assurances  Submitting assurance for val=0, cores=[0, 1]
+[s=136] fuzz::assurances  Submitting assurance for val=1, cores=[0]
+[s=136] fuzz::assurances  Submitting assurance for val=2, cores=[0, 1]
+[s=136] fuzz::assurances  Submitting assurance for val=4, cores=[1]
+[s=136] fuzz::guarantees  Creating up to 2 packages
+[s=136] fuzz::guarantees  Building package with up to 2 items
+[s=136] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 7a708471 = 2054194289
+[s=136] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 0da504d4 = 228918484
+[s=136] fuzz::guarantees  Building package with up to 5 items
+[s=136] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 398d0c50 = 965545040
+[s=136] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 0d5f42f9 = 224346873
+[s=136] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 7a708471 = 2054194289
+[s=136] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 0da504d4 = 228918484
+[s=136] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 39fc6017 = 972840983
+[s=136] fuzz::guarantees  Built 2 of 2 packages
+[s=136] fuzz::fuzzer  Importing: 23489f151567d2cc... (author=4, slot=136, parent=0xb173053aafb1c30c...)
+[s=136] fuzz::fuzzer  Imported 23489f151567d2cc... 
+[s=136] fuzz::fuzzer  State root: bd29dd0546e8b316...
+[s=136] fuzz::fuzzer  Failed sending block to to target: IO error: Broken pipe (os error 32)
+[s=136] fuzz::fuzzer  Terminating after 136 steps with result: Err(RemoteCommunication(Io(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })))
+
+==================================================
+==================== REPORT ======================
+==================================================
+
+Configuration
+-------------
+seed = 1772632944_4444
+max_steps = 100000
+safrole = false
+profile = fuzzy
+fuzzy_profile = rand
+max_work_items = 5
+mutation_ratio = 0.10
+max_mutations = 0
+
+Local Statistics
+----------------
+steps = 136
+imported = 132
+import_min = 1.90 ms
+import_max = 577.49 ms
+import_max_step = 26
+import_mean = 27.64 ms
+import_p50 = 7.47 ms
+import_p75 = 10.58 ms
+import_p90 = 16.96 ms
+import_p99 = 437.08 ms
+import_std_dev = 92.64 ms
+
+Target Info
+-----------
+jam-forge-0.1.2_gp-0.7.2
+
+Target Statistics
+-----------------
+steps = 135
+imported = 131
+import_min = 17.33 ms
+import_max = 1905.44 ms
+import_max_step = 85
+import_mean = 120.07 ms
+import_p50 = 57.11 ms
+import_p75 = 107.90 ms
+import_p90 = 238.57 ms
+import_p99 = 981.94 ms
+import_std_dev = 215.91 ms
+
+Communication failure: IO error: Broken pipe (os error 32) (potential target crash)
+
+Error: State mismatch
+--------------------------------------------------
+
+Setting JAM spec: tiny
+['jamforge']
+Skipping get
+
+==================================================
+Running fuzzer local workflow for jamforge
+==================================================
+
+* Running target: jamforge
+Starting target with command: /home/ubuntu/w3f-jam-conformance/scripts/target.py run jamforge --container-name jamforge-1772632944_8558
+Target output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8558/logs/target_jamforge.log
+Target started with PID: 2603
+Target socket /tmp/jam_fuzz_1772632944_8558.sock is ready.
+Running cargo command: cargo run --release -p polkajam-fuzz -- --source local --max-steps 100000 --step-period 0 --safrole false --seed 1772632944_8558 --max-work-items 5 --single-step false --profile fuzzy --fuzzy-profile rand --trace-dir /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8558/trace --target-sock /tmp/jam_fuzz_1772632944_8558.sock --mutation-ratio 0.1 --max-mutations 0 --verbosity 0 --pvm-interpreter-backend
+Fuzzer output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8558/logs/fuzzer_jamforge.log
+Fuzzer completed with error code: 1
+Check /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8558/logs/fuzzer_jamforge.log for detailed output.
+* Terminating target process with PID: 2603
+Target process terminated successfully
+-----------------------------------------------
+Generating report from traces...
+* Report dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8558/report
+* Traces dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8558/trace
+  - depth 2
+  - prune False
+-----------------------------------------------
+
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8558/trace/00000132.bin
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8558/trace/00000131.bin
+* Processing report.bin if it exists
+Creating report.json file in /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8558/report
+Copying /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8558/trace/report.bin to /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8558/report
+* Publishing report
+* Publish report traces
+Copying trace file 00000132.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_8558
+Copying trace file 00000131.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_8558
+Skipping non-trace file report.bin
+Copying trace file 00000131.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_8558
+Skipping non-trace file report.json
+Copying trace file 00000132.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_8558
+Traces copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_8558
+* Publish report
+Copying report file report.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_8558
+Copying report file report.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_8558
+Reports copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_8558
+
+--------------------------------------------------
+fuzzer_jamforge.log tail
+--------------------------------------------------
+Dumping contents of log file: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8558/logs/fuzzer_jamforge.log
+[s=130] fuzz::guarantees  Building package with up to 2 items
+[s=130] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 2daa07fd = 766117885
+[s=130] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 30bb2129 = 817570089
+[s=130] fuzz::guarantees  Building package with up to 5 items
+[s=130] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 9c8c99a2 = 2626460066
+[s=130] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 9f61929f = 2673971871
+[s=130] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 30bb2129 = 817570089
+[s=130] fuzz::guarantees  Building package with up to 2 items
+[s=130] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 2daa07fd = 766117885
+[s=130] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 2daa07fd = 766117885
+[s=130] fuzz::guarantees  Built 3 of 3 packages
+[s=130] fuzz::fuzzer  Importing: 132d75d6f91e1d45... (author=4, slot=130, parent=0xb95f8165bca307b5...)
+[s=130] fuzz::fuzzer  Imported 132d75d6f91e1d45... 
+[s=130] fuzz::fuzzer  State root: 8f69f69548ef3900...
+[s=130] fuzz::fuzzer  ======================= [STEP 00000131] =======================
+[s=131] fuzz::assurances  Submitting assurance for val=0, cores=[0, 1]
+[s=131] fuzz::assurances  Submitting assurance for val=1, cores=[1]
+[s=131] fuzz::assurances  Submitting assurance for val=2, cores=[0, 1]
+[s=131] fuzz::assurances  Submitting assurance for val=3, cores=[0]
+[s=131] fuzz::guarantees  Creating up to 1 packages
+[s=131] fuzz::guarantees  Building package with up to 3 items
+[s=131] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 7585aad9 = 1971694297
+[s=131] fuzz::builder  Picking Fuzzy service for new work item. Service ID: cb414722 = 3410052898
+[s=131] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 2317a585 = 588752261
+[s=131] fuzz::guarantees  Built 1 of 1 packages
+[s=131] fuzz::fuzzer  Importing: 01de643a37410394... (author=0, slot=131, parent=0x132d75d6f91e1d45...)
+[s=131] fuzz::fuzzer  Imported 01de643a37410394... 
+[s=131] fuzz::fuzzer  State root: 61b217192489e614...
+[s=131] fuzz::fuzzer  ======================= [STEP 00000132] =======================
+[s=132] fuzz::assurances  Submitting assurance for val=0, cores=[0, 1]
+[s=132] fuzz::assurances  Submitting assurance for val=1, cores=[0, 1]
+[s=132] fuzz::assurances  Submitting assurance for val=2, cores=[0, 1]
+[s=132] fuzz::assurances  Submitting assurance for val=3, cores=[0, 1]
+[s=132] fuzz::assurances  Submitting assurance for val=4, cores=[0, 1]
+[s=132] fuzz::assurances  Submitting assurance for val=5, cores=[0, 1]
+[s=132] fuzz::guarantees  Creating up to 2 packages
+[s=132] fuzz::guarantees  Building package with up to 5 items
+[s=132] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 619f44d5 = 1637827797
+[s=132] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 0bfcf038 = 201125944
+[s=132] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 2daa07fd = 766117885
+[s=132] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 30bb2129 = 817570089
+[s=132] fuzz::guarantees  Building package with up to 1 items
+[s=132] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 2317a585 = 588752261
+[s=132] fuzz::guarantees  Built 2 of 2 packages
+[s=132] fuzz::fuzzer  Importing: 0ad90f4dcd3d82da... (author=5, slot=132, parent=0x01de643a37410394...)
+[s=132] fuzz::fuzzer  Imported 0ad90f4dcd3d82da... 
+[s=132] fuzz::fuzzer  State root: d3f7844cd66bfe74...
+[s=132] fuzz::fuzzer  Failed sending block to to target: IO error: Broken pipe (os error 32)
+[s=132] fuzz::fuzzer  Terminating after 132 steps with result: Err(RemoteCommunication(Io(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })))
+
+==================================================
+==================== REPORT ======================
+==================================================
+
+Configuration
+-------------
+seed = 1772632944_8558
+max_steps = 100000
+safrole = false
+profile = fuzzy
+fuzzy_profile = rand
+max_work_items = 5
+mutation_ratio = 0.10
+max_mutations = 0
+
+Local Statistics
+----------------
+steps = 132
+imported = 132
+import_min = 1.92 ms
+import_max = 855.98 ms
+import_max_step = 124
+import_mean = 30.86 ms
+import_p50 = 7.43 ms
+import_p75 = 11.79 ms
+import_p90 = 17.11 ms
+import_p99 = 520.25 ms
+import_std_dev = 112.64 ms
+
+Target Info
+-----------
+jam-forge-0.1.2_gp-0.7.2
+
+Target Statistics
+-----------------
+steps = 131
+imported = 131
+import_min = 15.90 ms
+import_max = 1675.93 ms
+import_max_step = 25
+import_mean = 110.77 ms
+import_p50 = 52.59 ms
+import_p75 = 84.84 ms
+import_p90 = 233.15 ms
+import_p99 = 1146.18 ms
+import_std_dev = 206.04 ms
+
+Communication failure: IO error: Broken pipe (os error 32) (potential target crash)
+
+Error: State mismatch
+--------------------------------------------------
+
+Setting JAM spec: tiny
+['jamforge']
+Skipping get
+
+==================================================
+Running fuzzer local workflow for jamforge
+==================================================
+
+* Running target: jamforge
+Starting target with command: /home/ubuntu/w3f-jam-conformance/scripts/target.py run jamforge --container-name jamforge-1772632944_8314
+Target output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8314/logs/target_jamforge.log
+Target started with PID: 2598
+Target socket /tmp/jam_fuzz_1772632944_8314.sock is ready.
+Running cargo command: cargo run --release -p polkajam-fuzz -- --source local --max-steps 100000 --step-period 0 --safrole false --seed 1772632944_8314 --max-work-items 5 --single-step false --profile fuzzy --fuzzy-profile rand --trace-dir /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8314/trace --target-sock /tmp/jam_fuzz_1772632944_8314.sock --mutation-ratio 0.1 --max-mutations 0 --verbosity 0 --pvm-interpreter-backend
+Fuzzer output will be written to: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8314/logs/fuzzer_jamforge.log
+Fuzzer completed with error code: 1
+Check /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8314/logs/fuzzer_jamforge.log for detailed output.
+* Terminating target process with PID: 2598
+Target process terminated successfully
+-----------------------------------------------
+Generating report from traces...
+* Report dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8314/report
+* Traces dir: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8314/trace
+  - depth 2
+  - prune False
+-----------------------------------------------
+
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8314/trace/00000119.bin
+* Processing: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8314/trace/00000118.bin
+* Processing report.bin if it exists
+Creating report.json file in /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8314/report
+Copying /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8314/trace/report.bin to /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8314/report
+* Publishing report
+* Publish report traces
+Copying trace file 00000119.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_8314
+Skipping non-trace file report.bin
+Copying trace file 00000119.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_8314
+Copying trace file 00000118.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_8314
+Skipping non-trace file report.json
+Copying trace file 00000118.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_8314
+Traces copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/traces/1772632944_8314
+* Publish report
+Copying report file report.bin to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_8314
+Copying report file report.json to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_8314
+Reports copied to /home/ubuntu/w3f-jam-conformance/fuzz-reports/0.7.2/reports/jamforge/1772632944_8314
+
+--------------------------------------------------
+fuzzer_jamforge.log tail
+--------------------------------------------------
+Dumping contents of log file: /home/ubuntu/w3f-jam-conformance/scripts/sessions/1772632944_8314/logs/fuzzer_jamforge.log
+[s=116] fuzz::assurances  Submitting assurance for val=0, cores=[0]
+[s=116] fuzz::assurances  Submitting assurance for val=1, cores=[0]
+[s=116] fuzz::assurances  Submitting assurance for val=2, cores=[0, 1]
+[s=116] fuzz::assurances  Submitting assurance for val=3, cores=[0, 1]
+[s=116] fuzz::assurances  Submitting assurance for val=5, cores=[0, 1]
+[s=116] fuzz::fuzzer  Importing: add62f97117e7742... (author=5, slot=116, parent=0x4296b43c3c8d0a15...)
+[s=116] fuzz::fuzzer  Imported add62f97117e7742... 
+[s=116] fuzz::fuzzer  State root: 9fb9bda2326a1bd9...
+[s=116] fuzz::fuzzer  ======================= [STEP 00000117] =======================
+[s=117] fuzz::assurances  Submitting assurance for val=0, cores=[0, 1]
+[s=117] fuzz::assurances  Submitting assurance for val=1, cores=[0, 1]
+[s=117] fuzz::assurances  Submitting assurance for val=2, cores=[0, 1]
+[s=117] fuzz::assurances  Submitting assurance for val=3, cores=[0, 1]
+[s=117] fuzz::assurances  Submitting assurance for val=4, cores=[0]
+[s=117] fuzz::assurances  Submitting assurance for val=5, cores=[0, 1]
+[s=117] fuzz::fuzzer  Importing: 3bbf51ab002a6825... (author=4, slot=117, parent=0xadd62f97117e7742...)
+[s=117] fuzz::fuzzer  Imported 3bbf51ab002a6825... 
+[s=117] fuzz::fuzzer  State root: 96c06ed758c97fd2...
+[s=117] fuzz::fuzzer  ======================= [STEP 00000118] =======================
+[s=118] fuzz::assurances  Submitting assurance for val=0, cores=[0]
+[s=118] fuzz::assurances  Submitting assurance for val=1, cores=[0]
+[s=118] fuzz::assurances  Submitting assurance for val=2, cores=[0]
+[s=118] fuzz::assurances  Submitting assurance for val=3, cores=[0]
+[s=118] fuzz::assurances  Submitting assurance for val=4, cores=[0]
+[s=118] fuzz::assurances  Submitting assurance for val=5, cores=[0]
+[s=118] fuzz::fuzzer  Importing: fffc88c3652059af... (author=1, slot=118, parent=0x3bbf51ab002a6825...)
+[s=118] fuzz::fuzzer  Imported fffc88c3652059af... 
+[s=118] fuzz::fuzzer  State root: 32de6382e6564564...
+[s=118] fuzz::fuzzer  ======================= [STEP 00000119] =======================
+[s=119] fuzz::assurances  Submitting assurance for val=1, cores=[0]
+[s=119] fuzz::assurances  Submitting assurance for val=4, cores=[0]
+[s=119] fuzz::assurances  Submitting assurance for val=5, cores=[0]
+[s=119] fuzz::guarantees  Creating up to 2 packages
+[s=119] fuzz::guarantees  Building package with up to 3 items
+[s=119] fuzz::builder  Picking Fuzzy service for new work item. Service ID: e09ece18 = 3768503832
+[s=119] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 0f65814f = 258310479
+[s=119] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 51c92c1c = 1372138524
+[s=119] fuzz::guarantees  Building package with up to 5 items
+[s=119] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 86d8c26d = 2262352493
+[s=119] fuzz::builder  Picking Fuzzy service for new work item. Service ID: a5e4a6b1 = 2783225521
+[s=119] fuzz::builder  Picking Fuzzy service for new work item. Service ID: d6685eb8 = 3597164216
+[s=119] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 86d8c243 = 2262352451
+[s=119] fuzz::builder  Picking Fuzzy service for new work item. Service ID: 86d8c26d = 2262352493
+[s=119] fuzz::guarantees  Built 2 of 2 packages
+[s=119] fuzz::fuzzer  Importing: c63f7dcfe97639d6... (author=1, slot=119, parent=0xfffc88c3652059af...)
+[s=119] fuzz::fuzzer  Imported c63f7dcfe97639d6... 
+[s=119] fuzz::fuzzer  State root: 93d3d9bea69e03bf...
+[s=119] fuzz::fuzzer  Failed sending block to to target: IO error: Broken pipe (os error 32)
+[s=119] fuzz::fuzzer  Terminating after 119 steps with result: Err(RemoteCommunication(Io(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })))
+
+==================================================
+==================== REPORT ======================
+==================================================
+
+Configuration
+-------------
+seed = 1772632944_8314
+max_steps = 100000
+safrole = false
+profile = fuzzy
+fuzzy_profile = rand
+max_work_items = 5
+mutation_ratio = 0.10
+max_mutations = 0
+
+Local Statistics
+----------------
+steps = 119
+imported = 119
+import_min = 1.98 ms
+import_max = 550.81 ms
+import_max_step = 22
+import_mean = 23.60 ms
+import_p50 = 7.08 ms
+import_p75 = 11.43 ms
+import_p90 = 16.00 ms
+import_p99 = 494.75 ms
+import_std_dev = 84.79 ms
+
+Target Info
+-----------
+jam-forge-0.1.2_gp-0.7.2
+
+Target Statistics
+-----------------
+steps = 118
+imported = 118
+import_min = 19.63 ms
+import_max = 1550.10 ms
+import_max_step = 83
+import_mean = 118.16 ms
+import_p50 = 58.65 ms
+import_p75 = 105.13 ms
+import_p90 = 185.32 ms
+import_p99 = 1120.62 ms
+import_std_dev = 209.46 ms
+
+Communication failure: IO error: Broken pipe (os error 32) (potential target crash)
+
+Error: State mismatch
+--------------------------------------------------
+

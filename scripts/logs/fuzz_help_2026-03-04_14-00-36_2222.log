@@ -1,0 +1,8 @@
+    Finished `release` profile [optimized + debuginfo] target(s) in 3.40s
+Building polkajam-fuzz binary
+Getting GP version from polkajam-fuzz
+Detected GP version from polkajam-fuzz: 0.7.2
+Setting JAM spec: tiny
+['help']
+⚠️ 'help' is not available for the selected GP version and will be skipped
+No targets to run
