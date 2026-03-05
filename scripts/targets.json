@@ -178,11 +178,12 @@
     "env": "USE_MINI_REDIS=true",
     "gp_version": "0.7.2"
   },
-  "jamforge": {
-    "image": "ghcr.io/philoniare/jam-forge:latest",
-    "cmd": "--socket-path {TARGET_SOCK}",
-    "gp_version": "0.7.2"
-  },
+"jamforge": {
+  "image": "ghcr.io/philoniare/jam-forge:latest",
+  "cmd": "--socket-path {TARGET_SOCK}",
+  "env": "LOG_LEVEL=DEBUG",
+  "gp_version": "0.7.2"
+ },
   "jam4s": {
     "image": "jamforscala/jam4s:0.7.2-rc.10-amd64",
     "cmd": "--fuzz --seed 0 --socket {TARGET_SOCK}",
