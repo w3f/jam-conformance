@@ -1,0 +1,76 @@
+{
+    "config": {
+        "seed": "1773318541_7456",
+        "max_steps": 100000,
+        "safrole": false,
+        "profile": {
+            "fuzzy": null
+        },
+        "fuzzy_profile": {
+            "rand": null
+        },
+        "max_work_items": 5,
+        "mutation_ratio": 0.1,
+        "max_mutations": 0
+    },
+    "stats": {
+        "steps": 69547,
+        "imported": 68178,
+        "import_max_step": 134,
+        "import_min": 1.718716,
+        "import_max": 1120.865789,
+        "import_mean": 15.519856818959227,
+        "import_p50": 18.283,
+        "import_p75": 24.698,
+        "import_p90": 255.322,
+        "import_p99": 289.482,
+        "import_std_dev": 40.53175393877859
+    },
+    "target": {
+        "info": {
+            "fuzz_version": 1,
+            "fuzz_features": 2,
+            "jam_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_version": {
+                "major": 0,
+                "minor": 1,
+                "patch": 2
+            },
+            "app_name": "jam-forge"
+        },
+        "stats": {
+            "steps": 69547,
+            "imported": 68178,
+            "import_max_step": 30269,
+            "import_min": 8.797861000000001,
+            "import_max": 2036.451525,
+            "import_mean": 61.91055424832027,
+            "import_p50": 90.311,
+            "import_p75": 257.109,
+            "import_p90": 741.549,
+            "import_p99": 1086.905,
+            "import_std_dev": 131.04721679841046
+        }
+    },
+    "error": {
+        "state_diff": {
+            "roots": {
+                "exp": "0x479ce1f27e99eed16e75236ae293c64c6436fc88b5996f69715f369a5f356c1d",
+                "got": "0xade71ede5bd1517cd6f007209abfce2519a35c37340e4dfd92e34fe8c57290a6"
+            },
+            "keyvals": [
+                {
+                    "key": "0x68d7834514b79cfec13e507a95e86ec03add50794acc76edd9370aca5ecbf2",
+                    "diff": {
+                        "exp": "0x0063e1a00e677f93",
+                        "got": "0x8d0afa93e74c0d22"
+                    }
+                }
+            ]
+        }
+    }
+}

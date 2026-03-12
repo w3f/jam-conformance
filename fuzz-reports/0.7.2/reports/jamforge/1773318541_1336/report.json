@@ -1,0 +1,62 @@
+{
+    "config": {
+        "seed": "1773318541_1336",
+        "max_steps": 100000,
+        "safrole": false,
+        "profile": {
+            "fuzzy": null
+        },
+        "fuzzy_profile": {
+            "rand": null
+        },
+        "max_work_items": 5,
+        "mutation_ratio": 0.1,
+        "max_mutations": 0
+    },
+    "stats": {
+        "steps": 5137,
+        "imported": 5044,
+        "import_max_step": 3362,
+        "import_min": 1.755346,
+        "import_max": 979.916268,
+        "import_mean": 12.905355171490859,
+        "import_p50": 6.846,
+        "import_p75": 9.751,
+        "import_p90": 13.465,
+        "import_p99": 261.377,
+        "import_std_dev": 40.80055694698677
+    },
+    "target": {
+        "info": {
+            "fuzz_version": 1,
+            "fuzz_features": 2,
+            "jam_version": {
+                "major": 0,
+                "minor": 7,
+                "patch": 2
+            },
+            "app_version": {
+                "major": 0,
+                "minor": 1,
+                "patch": 2
+            },
+            "app_name": "jam-forge"
+        },
+        "stats": {
+            "steps": 5136,
+            "imported": 5043,
+            "import_max_step": 11,
+            "import_min": 9.195209,
+            "import_max": 2227.973032,
+            "import_mean": 59.673188332342114,
+            "import_p50": 32.566,
+            "import_p75": 51.893,
+            "import_p90": 77.157,
+            "import_p99": 792.292,
+            "import_std_dev": 129.69229403178184
+        }
+    },
+    "error": {
+        "communication": "IO error: Broken pipe (os error 32) (potential target crash)"
+    }
+}
